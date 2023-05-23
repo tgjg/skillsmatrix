@@ -1,0 +1,96 @@
+
+
+Intro to Computer Hardware
+    Data Storage and Representation
+    Logic and Data Manipulation
+    Storing Data and Files
+    Cloud Computing
+    CPU and Memory
+    Monitoring and Execution
+    Advanced Storage
+    Operating Systems
+    Virtualization
+    Containers
+    Introduction to Linux
+    The Linux Environment
+    Linux Navigation
+    Linux Commands
+        Basics
+        Remote Access
+        Building Software
+        Troubleshooting
+    Linux Architecture & Components
+
+Search, Web, Networking
+    Search
+    WWW and Serving
+    Networking
+    Types of Networks
+        Protocols
+        Email networking
+        DNS
+        IP addresses
+
+
+Introduction To Servers and Programmimng
+    Introduction to Servers
+    Web Servers
+    Database Servers
+    DNS Servers
+    Log Servers
+    Email Servers
+    Programming
+        Python
+        Conditionals, loops, functions, user input, and objects
+        PEP 8 style guide
+        C
+        Pointers
+
+Coding
+    Git Hands On
+    Printing in Python
+    Variables in Python
+    String Manipulation Practice
+    Manipulating Numbers
+    Type Conversion
+    Dictionary Practice
+    Bringing It Together
+    For Loops
+    User Input Prompts
+    CLI User Input Lab
+    Conditionals
+    Class and Objects Lab
+    While Loops
+    Exceptions Lab
+    Functions
+    Reading and Writing Files
+    Create a Portscanner
+    Printing
+    String Handling
+    Variables
+    Comments
+    Pointers and Memory
+
+
+Security Concepts
+    Symmetric Encryption Challenge
+    Asymmetric Encryption Challenge
+    Hashing Challenge
+    Break Me Challenge
+    Steganography Challenge
+    Exfiltration Challenge Lab
+    Buffer Overflows
+    Format String Lab
+    Privilege Escalation Lab
+
+    Encryption
+    Security
+    Security Distributions
+    Reconnaissance
+    Forensics
+    Exploitation
+    Privilege Escalation
+    Persistence
+    Lateral Movement
+    Exfiltration
+

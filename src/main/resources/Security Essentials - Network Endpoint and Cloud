@@ -1,0 +1,427 @@
+Defensible Network Architecture
+
+    Network Architecture
+    Attacks Against Network Devices
+    Network Topologies
+    Network Design
+
+    Network Protocols Overview
+    Layer 3 Protocols
+        Internet Protocol
+        Internet Control Message Protocol
+    Layer 4 Protocols
+        Transmission Control Protocol
+        User Datagram Protocol
+    Tcpdump
+
+    Virtualisation and Cloud Essentials
+        Virtualization Overview
+        Virtualization Security
+        Cloud Overview
+        Cloud Security
+
+    Securing Wireless Networks
+        The Pervasiveness of Wireless Communications
+        Traditional Wireless: IEEE 802.11 and its Continual Evolution
+        Personal Area Networks
+        5G Cellular (Mobile) Communications
+        The Internet of Things
+
+    Defense in Depth
+        Defense in Depth Overview
+            Risk = Threat x Vulnerability
+            Confidentiality, Integrity and Availability
+        Strategies for Defense in Depth
+        Core Security Strategies
+        Defense in Depth in the Cloud
+        Zero Trust Methodology
+        Variable Trust
+
+    Identity and Access Management
+        Digital Identity
+            Authentication
+            Authorization
+            Accountability
+        Identity Access Management
+        Single Sign On (SOS): On-Premise and Cloud
+            Traditional SSO
+            SAML 2.0
+            0Auth 2.0
+        Access Control
+            Controlling Access
+            Managing Access
+            Monitoring Access
+
+        Privileged Access Management: On-Premise and Cloud
+
+    Authentication and Password Security
+        Authentication Types
+            Something You Know
+            Something You Have
+            Something You Are
+        Password Management
+        Password Techniques
+        Password (Passphrase) Policies
+        Password Storage
+        Key Derivation Functions
+        How Password Assessment Works
+        Password Attack Tools
+            Hashcat
+            Mimikatz
+        Multi-Factor Authentication
+        Adaptive Authentication
+
+    Security Frameworks
+        ISO 27000
+        Introduction to the CIS Controls
+            Guiding Principles
+            Case Study: Sample CIS Control
+            Case Study: SolarWinds
+        NIST Cybersecurity Framework
+            Framework Core
+            Implementation Tiers
+            Framework Profiles
+        MITRE ATT&CK
+            Techniques
+            Mapping to Known Adversaries
+
+    Data Loss Prevention
+        Loss or Leakage
+            Data Loss
+            Data Leakage
+            Ransomware
+        Preventative Strategies
+            Redundancy (On-Premise and Cloud)
+            Data Recovery
+        Related Regulatory Requirements
+            GDPR
+            CCPA
+        Data Loss Prevention Tools
+        Defending Against Data Exfiltration
+            Honeypots
+            User Activity Monitoring
+
+
+    Mobile Device Security
+        Android versus iOS
+        Android Security
+            Android Security Features
+            What You Need to Know About Android
+            Android Fragmentation
+            Android Security Fix Process
+        Apple iOS Security
+            Apple iOS Security Features
+            What to Know About iOS
+            iOS Updates
+        Mobile Problems and Opportunities
+        Mobile Device Management
+        Unlocking, Rooting, and Jailbreaking
+        Mitigating Mobile Malware
+            Android Malware
+            iOS Malware
+
+    Vulnerability Management and Response
+        Introduction to Vulnerability Assessments
+        Steps to Perform a Vulnerability Assessment
+        Criticality and Risks
+
+        Penetration Testing
+            The What and Why of Penetration Testing
+            Red Team
+            Adversary Emulation
+            Purple Team
+
+        Types of Penetration Testing
+            External
+            Internal
+            Web Application
+            Social Engineering
+            Mobile Device Testing
+            Internet of Things Testing
+
+        Penetration Testing Process
+        Penetration Testing Tools
+            Nmap
+            Metasploit
+            Meterpreter
+            C2 Frameworks and Implants
+
+        Password Compromise, Reuse, Stuffing, and Spraying
+
+    Attacks and Malicious Software
+        High-Profile Breaches and Ransomware
+        Ransomware as a Service
+        Common Attack Techniques
+        Malware and Analysis
+
+
+    Web Application Security
+        Web Communication Fundamentals
+            Cookies
+            HTTPS
+        Developing Secure Web Apps
+            OWASP Top Ten
+            Basics of Secure Coding
+        Web Application Vulnerabilities
+            Authentication
+            Access Control
+            Session Tracking/Maintaining State
+        Web Application Monitoring
+            Web Application Firewall (WAF)
+            Monolithic Architecture and Security Controls
+            Microservice Architecture and Related Attack Surface
+
+    Security Operations and Log Management
+        Logging Overview
+            Log Collection Architecture
+            Log Filtering
+            Lack of Accepted Log Standards
+        Setting Up and Configuring Log Standards
+            Log Analysis Tools
+            Phased Approach
+            Log Aggregation, Security Information, and Event Management
+        Key Logging Activity
+
+
+    Digital Forensics and Incident Response
+        Introduction to Digital Forensics
+            What is Digital Forensics?
+            Digital Forensics in Practice
+            The Investigative Process
+            Remaining Forensically Sound
+            Examples of Examining Forensics Artifacts
+            DFIR Subdisciplines
+            Digital Forensics Tools
+        Incident Handling Fundamentals
+        Multi-Step Process for Handling an Incident
+        Incident Response: Threat Hunting
+
+
+    Cryptosystem Fundamentals
+        Cryptography
+        Cryptanalysis
+    General Types of Cryptosystems
+        Symmetric
+        Asymmetric
+        Hashing
+    Digital Signatures
+    Steganography
+
+    Cryptography Concepts
+    Symmetric, Asymmetric, and Hashing Cryptosystems
+        AES
+        RSA
+        ECC
+    Cryptography Attacks (Cryptanalysis)
+
+        Virtual Private Networks (VPN)
+
+            IPsec
+            SSL-based
+            Security Implications
+
+    Data at Rest
+
+        File/Folder Level Encryption
+        Full Disk Encryption
+        GNU Privacy Guard (GPG)
+
+    Key Management
+
+        Public Key Infrastructure
+        Digital Certificates
+        Certificate Authorities
+
+Network Security Devices
+        Firewalls
+            Overview
+            Types of Firewalls
+            Configuration and Deployment
+        NIDS
+            Types of NIDS
+            Snort as a NIDS
+        NIPS
+            Methods of Deployment
+            Security and Productivity Risk Considerations
+
+Endpoint Security
+    Endpoint Security Overview
+        Core Components of Endpoint Security
+        Enhancing Endpoint Security
+    Endpoint Security Solutions
+        Anti-malware
+        Endpoint Firewalls
+        Integrity Checking
+    HIDS and HIPS
+        Overview
+        Practical Considerations
+
+Windows as a Service
+    End of Support
+    Servicing Channels
+    Windows Update
+    Windows Server Update Services
+    Windows Autopilot
+    Windows Virtual Desktop
+    Third-Party Patch Management
+
+
+    Windows Access Controls
+        NTFS Permissions
+        Shared Folder Permissions
+        Registry Key Permissions
+        Active Directory Permissions
+        Privileges
+        BitLocker Drive Encryption
+        Secure Boot
+
+    Enforcing Windows Security Policyu
+        Applying Security Templates
+        Employing the Security Configuration and Analysis Snap-in
+        Understanding Local Group Policy Objects
+        Understanding Domain Group Policy Objects
+        Administrative Users
+            Privileged Account Management
+            Reduction of Administrative Privileges
+        AppLocker
+        User Account Control
+        Windows Firewall
+        IPsec Authentication and Encryption
+        Remote Desktop Services
+        Recommended GPO Settings
+
+    Microsoft Cloud Computing
+        Microsofts All-In Bet on Cloud Computing
+        Microsoft Cloud Types: IaaS, PaaS, SaaS, and DaaS
+        Microsoft Azure
+        Azure Active Directory (Azure AD)
+        Azure AD Single Sign-On
+        Multi-Factor Authentication
+        Administrative Role Reduction
+        Endpoint Security Enforcement
+        Microsoft Intune
+        Azure Conditional Access
+        Azure Key Vault
+        Azure Monitor
+        Azure Sentinel (SIEM and SOAR)
+        Azure Policy
+        Azure Security Center
+
+    Automation Logging and Auditing
+        What Is Windows PowerShell?
+        Windows PowerShell versus PowerShell Core
+        Windows Subsystem for Linux (WSL)
+        Automation and Command-Line Capability in Azure
+            PowerShell Az Module
+            Azure CLI
+            Azure Cloud Shell
+            Azure Resource Manager Templates
+            Runbooks
+        Gathering Ongoing Operational Data
+        Employing Change Detection and Analysis
+
+
+    Linux Fundamentals
+        Operating System Comparison
+        Linux Vulnerabilities
+        Linux Operating System
+            Shell
+            Kernel
+            Filesystem
+            Linux Unified Key Setup
+        Linux Security Permissions
+        Linux User Accounts
+        Pluggable Authentication Modules
+        Built-in Command-Line Capability
+        Service Hardening
+        Package Management
+
+    Linux Security Enhancements
+        Operating System Enhancements
+            SELinux
+            AppArmor
+        Linux Hardening
+            Address Space Layout Randomization
+            Kernel Module Security
+            SSH Hardening
+            CIS Hardening Guides and Utilities
+        Log Files
+
+            Key Log Files
+            Syslog
+            Syslog Security
+            Log Rotation
+            Centralized
+            Logging
+            Auditid
+            Firewalls: Network and Endpoint
+            Rootkit Detection
+
+    Containerised Security
+        Virtualization
+            Containers versus Virtual Machines
+        Containers and Orchestration
+            LXC
+            Cgroups and Namespaces
+            Docker
+            Docker Images
+            Kubernetes
+        Container Security
+            Docker Best Practices
+            Vulnerability Management
+            Secure Configuration Baselines
+            Terraform
+
+    AWS Essentials, Controls and Best Practices
+        Identity and Access Management in AWS
+            AWS IAM Key Concepts
+            Identity Federations and External Access
+            Amazon Cognito
+        Management Tools Within AWS
+            AWS Console
+            AWS CLI
+        AWS Commonly Used Services and Functionality
+            High-Availability
+            EC2
+            S3
+            Lambda
+            CloudFront
+            AWS Config
+            Amazon RDS
+
+            AWS Security Controls
+            NACLs versus Security Groups
+            AWS Network Firewall
+            AWS Shield and AWS Web Application Firewall
+            Amazon Macie
+            Key Management Service
+                Amazon Managed
+                Customer Managed
+                HSM
+            Amazon CloudWatch
+            Amazon CloudTrail
+            Amazon GuardDuty
+        AWS Well-Architected Framework (Security Pillar)
+            Implement a Strong Identity Foundation
+            Enable Traceability
+            Apply Security at All Layers
+                Network
+                Compute
+            Automate Security Best Practices
+            Protect Data in Transit and at Rest
+            Keep People Away from Data
+            Prepare for Security Events
+
+        MacOS Security
+            What is macOS?
+            Privacy Controls
+                Keychain
+                Strong Passwords
+            Gatekeeper
+            Anti-Phishing and Download Protection
+            XProtect
+            Firewall
+            FireVault
+            Sandboxing and Runtime Protection
+            Security Enclaves
+            macOS Vulnerabilities and Malware

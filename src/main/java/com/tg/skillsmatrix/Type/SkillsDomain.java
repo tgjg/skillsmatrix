@@ -1,0 +1,16 @@
+package com.tg.skillsmatrix.Type;
+
+public enum SkillsDomain {
+    PHYSICAL,
+    OPERATIONAL_TECHNOLOGY,
+    NETWORK_SWITCHING_AND_ROUTING,
+    NETWORK_PERIMETER,
+    NETWORK_ANALYSIS,
+    HOST_END_POINT,
+    HOST_SERVER,
+    ANTI_MALWARE,
+    IDENTITY,
+    ACCESS_MANAGEMENT,
+
+
+}

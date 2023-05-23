@@ -1,0 +1,605 @@
+    Windows Operating System Components
+        Key Differences in Modern Windows Operating Systems
+    Core Forensic Principles
+        Analysis Focus
+        Determining Your Scope
+        Creating and Investigative Plan
+    Live Response and Triage-Based Acquisition Techniques
+        RAM Acquisition and Following the Order of Volatility
+        Triage-Based Forensics and Fast Forensic Acquisition
+        Encryption Detection
+        Registry and Locked File Extraction
+        Leveraging the Volume Shadow Service
+        KAPE Triage Collection
+    Windows Image Mounting and Examination
+    NTFS File System Overview
+    Document and File Metadata
+    Volume Shadow Copies
+    File and Stream Carving
+        Principles of Data Carving
+        Recovering File System Metadata
+        File and Stream Carving Tools
+        Custom Carving Signatures
+    Memory, Pagefile, and Unallocated Space Analysis
+        Artifact Recovery and Examination
+        Chat Application Analysis
+        Internet Explorer, Edge, Firefox, Chrome, and InPrivate Browser Recovery
+        Email and Webmail, including Yahoo, Outlook.com, and Gmail
+
+
+    Registry Forensics In-Depth
+    Registry Core
+        Hives, Keys, and Values
+        Registry Last Write Time
+        MRU Lists
+        Deleted Registry Key Recovery
+        Identify Dirty Registry Hives and Recover Missing Data
+        Rapidly Search and Timeline Multiple Registry Hives
+    Profile Users and Groups
+        Discover Usernames and Relevant Security Identifiers
+        Last Login
+        Last Failed Login
+        Login Count
+        Password Policy
+        Local versus Domain Account Profiling
+    Core System Information
+        Identify the Current Control Set
+        System Name and Version
+        Document the System Time Zone
+        Audit Installed Applications
+        Wireless, Wired, VPN, and Broadband Network Auditing
+        Perform Device Geolocation via Network Profiling
+        Identify System Updates and Last Shutdown Time
+        Registry-Based Malware Persistence Mechanisms
+        Identify Webcam and Microphone Usage by Illicit Applications
+    User Forensic Data
+        Evidence of File Downloads
+        Office and Microsoft 365 File History Analysis
+        Windows 7, Windows 8/8.1, Windows 10/11 Search History
+        Typed Paths and Directories
+        Recent Documents
+        Search for Documents with Malicious Macros Enabled
+        Open Save/Run Dialog Evidence
+        Application Execution History via UserAssist, Prefetch, System Resource Usage Monitor (SRUM), FeatureUsage, and BAM/DAM
+    Cloud Storage Forensics
+        Microsoft OneDrive
+        OneDrive Files on Demand
+        Microsoft OneDrive for Business
+        OneDrive Unified Audit Logs
+        Google Drive for Desktop
+        Google Workspace (G Suite) Logging
+        Google Protobuf Data Format
+        Dropbox
+        Dropbox Decryption
+        Dropbox Logging
+        Box Drive
+        Synchronization and Timestamps
+        Forensic Acquisition Challenges
+        User Activity Enumeration
+        Automating SQLite Database Parsing
+
+    Shell Item Forensics
+        Shortcut Files (LNK) - Evidence of File Opening
+        Windows 7-10 Jump Lists - Evidence of File Opening and Program Execution
+        ShellBag Analysis - Evidence of Folder Access
+    USB and BYOD Forensic Examinations
+        Vendor/Make/Version
+        Unique Serial Number
+        Last Drive Letter
+        MountPoints2 and Drive Mapping Per User (Including Mapped Shares)
+        Volume Name and Serial Number
+        Username that Used the USB Device
+        Time of First USB Device Connection
+        Time of Last USB Device Connection
+        Time of Last USB Device Removal
+        Drive Capacity
+        Auditing BYOD Devices at Scale
+        Identify Malicious HID USB Devices
+
+    Email Forensics
+        Evidence of User Communication
+        How Email Works
+        Email Header Examination
+        Email Authenticity
+        Determining a Sender's Geographic Location
+        Extended MAPI Headers
+        Host-Based Email Forensics
+        Exchange Recoverable Items
+        Exchange and M365 Evidence Acquisition and Mail Export
+        Exchange and M365 Compliance Search and eDiscovery
+        Unified Audit Logs in Microsoft 365
+        Google Workspace (G Suite) Logging
+        Recovering Data from Google Workspace Users
+        Web and Cloud-Based Email
+        Webmail Acquisition
+        Email Searching and Examination
+        Mobile Email Remnants
+        Business Email Compromise Investigations
+    Forensicating Additional Windows OS Artifacts
+        Windows Search Index Database Forensics
+        Extensible Storage Engine (ESE) Database Recovery and Repair
+        Windows Thumbcache Analysis
+        Windows Recycle Bin Analysis (XP, Windows 7-10)
+        System Resource Usage Monitor (SRUM)
+            Connected Networks, Duration, and Bandwidth Usage
+            Applications Run and Bytes Sent/Received Per Application
+            Application Push Notifications
+            Energy Usage
+    Windows Event Log Analysis
+        Event Logs that Matter to a Digital Forensic Investigator
+        EVTX and EVT Log Files
+            Track Account Usage, including RDP, Brute Force Password Attacks, and Rogue Local Account Usage
+            Prove System Time Manipulation
+            Track BYOD and External Devices
+            Microsoft Office Alert Logging
+            Geo-locate a Device via Event Logs
+
+rowser Forensics
+
+    History
+    Cache
+    Searches
+    Downloads
+    Understanding Browser Timestamps
+    Chrome
+        Chrome File Locations
+        Correlating URLs and Visits Tables for Historical Context
+        History and Page Transition Types
+        Chrome Preferences File
+        Web Data, Shortcuts, and Network Action Predictor Databases
+        Chrome Timestamps
+        Cache Examinations
+        Download History
+        Media History
+        Web Storage, IndexDB, and the HTML5 File System
+        Chrome Session Recovery
+        Chrome Profiles Feature
+        Chromium Snapshots folder
+        Identifying Cross-Device Chrome Synchronization
+    Edge
+        Chromium Edge vs. Google Chrome
+        History, Cache, Cookies, Download History, and Session Recovery
+        Microsoft Edge Collections
+        Edge Internet Explorer Mode
+        Chrome and Edge Extensions
+        Edge Artifact Synchronization and Tracking Multiple Profiles
+        Edge HTML and the Spartan.edb Database
+        Reading List, WebNotes, Top Sites, and SweptTabs
+    Internet Explorer
+        Internet Explorer Essentials and the Browser That Will Not Die
+        WebCache.dat Database Examination
+        Internet Explorer and Local File Access
+    Electron Applications and Chat Client Forensics
+        Electron Application Structure
+        Electron Chromium Cache
+        LevelDB Structure and Tools
+        Manual Parsing of LevelDB
+        Specialized LevelDB parsers
+    Firefox
+        Firefox Artifact Locations
+            SQLite Files and Firefox Quantum Updates
+    Download History
+        Firefox Cache2 Examinations
+        Detailed Visit Type Data
+        Form History
+            Session Recovery
+        Firefox Extensions
+        Firefox Cross-Device Synchronization
+    Private Browsing and Browser Artifact Recovery
+        Chrome, Edge, and Firefox Private Browsing
+        Investigating the Tor Browser
+        Identifying Selective Database Deletion
+    SQLite and ESE Database Carving and Examination of Additional Browser Artifacts
+        DOM and Web Storage Objects
+        Rebuilding Cached Web Pages
+        Browser Ancestry
+        Capturing Stored Browser Credentials
+
+
+    Digital Forensics Capstone
+        Analysis
+            Process and Triage a New Full Set of Evidence
+            Find Critical Evidence Following the Evidence Analysis Methods Discussed Throughout the Week
+            Examine Memory, Registry, Chat, Browser, Recovered Files, Synchronized Artifacts, Installed Malware, and More
+        Reporting
+            Build an Investigative Timeline
+            Answer Critical Investigative Questions with Factual Evidence
+            Practice Executive Summary and Report Generation
+            Present Technical Case Findings
+
+Advanced Incident Response and Threat Hunting
+Real Incident Response Tactics
+
+    Preparation: Key tools, techniques, and procedures that an incident response team needs to respond properly to intrusions
+    Identification/Scoping: Proper scoping of an incident and detecting all compromised systems in the enterprise
+    Containment/Intelligence Development: Restricting access, monitoring, and learning about the adversary in order to develop threat intelligence
+    Eradication/Remediation: Determining and executing key steps that must be taken to help stop the current incident and the move to real-time remediation
+    Recovery: Recording of the threat intelligence to be used in the event of a similar adversary returning to the enterprise
+    Avoiding "Whack-A-Mole" Incident Response: Going beyond immediate eradication without proper incident scoping/containment
+
+Threat Hunting
+
+    Hunting versus Reactive Response
+    Intelligence-Driven Incident Response
+    Building a Continuous Incident Response/Threat Hunting Capability
+    Forensic Analysis versus Threat Hunting Across Endpoints
+    Threat Hunt Team Roles
+    ATT&CK - MITRE's Adversarial Tactics, Techniques, and Common Knowledge (ATT&CK(TM))
+
+Threat Hunting in the Enterprise
+
+    Identification of Compromised Systems
+    Finding Active and Dormant Malware
+    Digitally Signed Malware
+    Malware Characteristics
+    Common Hiding and Persistence Mechanisms
+
+    Finding Evil by Understanding Normal
+
+Incident Response and Hunting across Endpoints
+
+    WMIC & PowerShell
+    PowerShell Remoting Scalability
+    PowerShell Remoting Credential Safeguards
+    Kansa PowerShell Remoting IR Framework
+
+Malware Defense Evasion and Identification
+
+    Service Hijacking/Replacement
+    Frequent Compilation
+    Binary Padding
+    Packing/Armoring
+    Dormant Malware
+    Signing Code with Valid Certificates
+    Anti-Forensics/Timestomping
+    Living of the Land Binaries and Security Tool Evasion
+
+Malware Persistence Identification
+
+    AutoStart Locations, RunKeys
+    Service Creation/Replacement
+    Service Failure Recovery
+    Scheduled Tasks
+    DLL Hijacking Attacks
+    WMI Event Consumers
+
+Prevention, detection, and mitigation of Credential Theft
+
+    Pass the Hash
+    Credential Attacks with Mimikatz
+    Token Stealing
+    Cached Credentials
+    LSA Secrets
+    Kerberos Attacks
+    Golden Tickets
+    Kerberoasting
+    DCSync
+    NTDS.DIT theft
+    Bloodhound and Active Directory Graphing
+    Common dumping tools including Metasploit, Acehash, Windows Credential Editor, and many others.
+
+Stealing and Utilization of Legitimate Credentials
+
+    Pass the Hash
+    Single Sign On (SSO) Dumping using Mimikatz
+    Token Stealing
+    Cached Credentials
+    LSA Secrets
+    Kerberos Attacks
+    NTDS.DIT theft
+
+Advanced Evidence of Execution Detection
+
+    Attacker Tactics, Techniques, and Procedures (TTPs) Observed Via Process Execution
+    Prefetch Analysis
+    Application Compatibility Cache (ShimCache)
+    Amcache Registry Examination
+    Scaling ShimCache and Amcache Investigations
+
+Lateral Movement Adversary Tactics, Techniques, and Procedures (TTPs)
+
+    Compromising Credentials Techniques
+    Remote Desktop Services Misuse
+    Windows Admin Share Abuse
+    PsExec and Cobalt Strike Beacon PsExec Activity
+    Windows Remote Management Tool Techniques
+    PowerShell Remoting/WMIC Hacking
+    Cobalt Strike Lateral Movement and Credential Use
+    Vulnerability Exploitation
+
+Log Analysis for Incident Responders and Hunters
+
+    Profiling Account Usage and Logons
+    Tracking and Hunting Lateral Movement
+    Identifying Suspicious Services
+    Detecting Rogue Application Installation
+    Finding Malware Execution and Process Tracking
+    Capturing Command Lines and Scripts
+    Anti-Forensics and Event Log Clearing
+
+Investigating WMI and PowerShell-Based Attacks
+
+    WMI Overview
+    WMI Attacks Across the Kill Chain
+    Auditing the WMI Repository
+    WMI File System and Registry Residue
+    Command-Line Analysis and WMI Activity Logging
+    PowerShell Transcript and ScriptBlock Logging
+    Discovering Cobalt Strike beacon PowerShell Import Activity
+    Detecting PowerShell Injection from Cobalt Strike, Metasploit, and Empire
+    PowerShell Script Obfuscation
+
+    Remote and Enterprise Incident Response
+
+        Remote Endpoint Access in the Enterprise
+        Remote Endpoint Host-based Analysis
+        Scalable Host-based Analysis (one analyst examining 1,000 systems) and Data Stacking
+        Remote Memory Analysis
+        Velociraptor, F-Response, and KAPE
+
+    Triage and Endpoint Detection and Response (EDR)
+
+        Endpoint Triage Collection
+        EDR Capabilities and Challenges
+        EDR and Memory Forensics
+
+    Memory Acquisition
+
+        Acquisition of System Memory
+        Hibernation and Pagefile Memory Extraction and Conversion
+        Virtual Machine Memory Acquisition
+        Memory changes in Windows 10 and 11
+
+    Memory Forensics Analysis Process for Response and Hunting
+
+        Understanding Common Windows Services and Processes
+        Identify Rogue Processes
+        Analyze Process Objects
+        Review Network Artifacts
+        Look for Evidence of Code Injection
+        Audit Drivers and Rootkit Detection
+        Dump Suspicious Processes and Drivers
+
+    Memory Forensics Examinations
+
+        Live Memory Forensics
+        Memory Analysis with Volatility
+        Webshell Detection Via Process Tree Analysis
+        Code Injection, Malware, and Rootkit Hunting in Memory
+        Advanced Memory Forensics with MemProcFS
+        WMI and PowerShell Process Anomalies
+        Extract Memory-Resident Adversary Command Lines
+        Investigate Windows Services
+        Hunting Malware Using Comparison Baseline Systems
+        Find and Dump Cached Files from RAM
+
+    Memory Analysis Tools
+
+        F-Response
+        Velociraptor
+        Volatility
+        MemProcFS
+
+    Malware Defense Evasion and Detection
+
+        Indicators of Compromise - YARA
+        Entropy and Packing Analysis
+        Executable Anomaly Detection
+        Digital Signature Analysis
+
+    Timeline Analysis Overview
+
+        Timeline Benefits
+        Prerequisite Knowledge
+        Finding the Pivot Point
+        Timeline Context Clues
+        Timeline Analysis Process
+
+    Filesystem Timeline Creation and Analysis
+
+        MACB Timestamps
+        Windows Time Rules (File Copy versus File Move)
+        Filesystem Timeline Creation Using Sleuthkit, fls and MFTECmd
+        Bodyfile Analysis and Filtering Using the mactime Tool
+
+    Super Timeline Creation and Analysis
+
+        Super Timeline Artifact Rules
+        Program Execution, File Knowledge, File Opening, File Deletion
+        Timeline Creation with log2timeline/Plaso
+        log2timeline/ Plaso Components
+        Filtering the Super Timeline Using psort
+        Targeted Super Timeline Creation
+        Super Timeline Analysis Techniques
+        Scaling Super Timeline Analysis with Elastic Search (ELK)
+
+    Volume Shadow Copy Analysis
+
+        Volume Shadow Copy Service
+        Options for Accessing Historical Data in Volume Snapshots
+        Accessing Shadow Copies with vshadowmount
+        Volume Shadow Copy Timelining
+
+    Advanced NTFS Filesystem Tactics
+
+        NTFS Filesystem Analysis
+        Master File Table (MFT) Critical Areas
+        NTFS System Files
+        NTFS Metadata Attributes
+        Rules of Windows Timestamps for $StdInfo and $Filename
+        Detecting Timestamp Manipulation
+        Resident versus Nonresident Files
+        Alternate Data Streams
+        NTFS Directory Attributes
+        B-Tree Index Overview and Balancing
+        Finding Wiped/Deleted Files using the $I30 indexes
+        Filesystem Flight Recorders: $Logfile and $UsnJrnl
+        Common Activity Patterns in the Journals
+        Useful Filters and Searches in the Journals
+        What Happens When Data Is Deleted from an NTFS Filesystem?
+
+    Advanced Evidence Recovery
+
+        Markers of Common Wipers and Privacy Cleaners
+        Deleted Registry Keys
+        Detecting "Fileless" Malware in the Registry
+        File Carving
+        Volume Shadow Carving
+        Carving for NTFS artifacts and Event Log Records
+        Effective String Searching
+        NTFS Configuration Changes to Combat Anti-Forensics
+
+
+Advanced Network Forensics
+    Web Proxy Server Examination
+        Role of a web proxy
+        Proxy solutions - commercial and open source
+        Squid proxy server
+        Configuration
+            Logging
+            Automated analysis
+            Cache extraction
+    Foundational Network Forensics Tools: tcpdump and Wireshark
+        tcpdump re-introduction
+            pcap file format
+            Berkeley Packet Filter (BPF)
+            Data reduction
+        Useful command-line parameters
+            Wireshark re-introduction
+            User interface
+            Display filters
+            Useful features for network forensic analysis
+    Network Evidence Acquisition
+        Three core types: full-packet capture, Logs, NetFlow
+        Capture devices: switches, taps, Layer 7 sources, NetFlow
+        Planning to capture: strategies; commercial and home-built platforms
+    Network Architectural Challenges and Opportunities
+        Challenges provided by a network environment
+        Future trends that will affect network forensics
+
+    Hypertext Transfer Protocol (HTTP) Part 1: Protocol
+        Forensic value
+        Request/response dissection
+        Useful HTTP fields
+        HTTP tracking cookies
+        HTTP/2 artifacts
+        Artifact extraction
+    Hypertext Transfer Protocol (HTTP) Part 2: Logs
+        Log formats
+        Expanded mod_forensic logging
+        Analysis methods
+    Domain Name Service (DNS): Protocol and Logs
+        Architecture and core functionality
+        Tunneling
+        Fast flux and domain name generation algorithms (DGAs)
+        Logging methods
+        Amplification attacks
+    Forensic Network Security Monitoring
+        Network Security Monitoring (NSM) emergence from Intrusion Detection Systems (IDSes)
+        Zeek NSM platform
+            Proactive/live use case
+            Post-incident DFIR use case
+            Logs created and formats used
+        JSON parsing with the "jq" utility
+        Community-ID flow hash value
+    Logging Protocol and Aggregation
+    Syslog
+        Dual role: server and protocol
+        Source and collection platforms
+        Event dissection
+        rsyslog configuration
+    Microsoft Eventing
+        Deployment model and capabilities
+        Windows Event Forwarding
+        Architecture
+        Analysis mode
+    Log Data Collection, Aggregation, and Analysis
+        Benefits of aggregation: scale, scope, independent validation, efficiency
+        Known weaknesses and mitigations
+        Evaluating a comprehensive log aggregation platform
+    Elastic Stack and the SOF-ELK Platform
+    Basics and pros/cons of the Elastic stack
+    SOF-ELK
+        Inputs
+        Log-centric dashboards
+        Use as a data exploration platform
+
+    NetFlow Collection and Analysis
+        Origins and evolution
+        NetFlow v5 and v9 protocols
+        Architectural components
+        NetFlow artifacts useful for examining encrypted traffic
+    Open-Source Flow Tools
+        Using open-source tool sets to examine NetFlow data
+        nfcapd, nfpcapd, and nfdump
+        SOF-ELK: NetFlow ingestion and dashboards
+    File Transfer Protocol (FTP)
+        History and current use
+        Shortcomings in today's networks
+        Capture and analysis
+        File extraction
+    Microsoft Protocols
+        Architecture and capture positioning
+        Exchange/Outlook
+        SMB v2, and v3
+
+    Simple Mail Transfer Protocol (SMTP)
+        Lifecycle of an email message
+        Artifacts embedded along the delivery pathway
+        Adaptations and extensions
+    Object Extraction with NetworkMiner
+        Value of commercial tools in a DFIR workflow
+        NetworkMiner
+            Capabilities and user interface
+            Use cases for object extraction
+            Limitations and mitigations
+    Wireless Network Forensics
+        Translating analysis of wired networks to the wireless domain
+        Capture methodologies: Hardware and Software
+        Useful protocol fields
+        Typical attack methodologies based on protection mechanisms
+    Automated Tools and Libraries
+        Common tools that can facilitate large-scale analysis and repeatable workflows
+        Libraries that can be linked to custom tools and solutions
+        Chaining tools together effectively
+    Full-Packet Hunting with Moloch
+        Moloch architecture and use cases
+        Methods of ingesting packet data for DFIR workflows
+        Session awareness, filtering, typical forensic use cases
+        Raw packet searching with hunt jobs
+        Enrichment of extracted metadata
+        Custom decoding with CyberChef
+
+    Encoding, Encryption, and SSL/TLS
+        Encoding algorithms
+        Encryption algorithms
+            Symmetric
+            Asymmetric
+        Profiling SSL/TLS connections with useful negotiation fields
+        Analytic mitigation
+        Perfect forward secrecy
+    Meddler-in-the-Middle (MITM)
+        Malicious uses and their artifacts
+        Benevolent uses and associated limitations
+        Common MITM tools
+    Network Protocol Reverse Engineering
+        Using known protocol fields to dissect unknown underlying protocols
+        Pattern recognition for common encoding algorithms
+        Addressing undocumented binary protocols
+        What to do after breaking the protocol
+    Investigation OPSEC and Threat Intel
+        Operational Security
+            Basic analysis can tip off attackers
+            How to mitigate risk without compromising quality
+        Intelligence
+            Plan to share smartly
+            Protect intelligence to mitigate risks
+
+    Analysis using only network-based evidence
+        Determine the original source of an advanced attacker's compromise
+        Identify the attacker's actions while in the victim's environment
+        Confirm what data the attacker stole from the victim
+    Reporting
+        Present executive-level summaries of your findings at the end of the day-long lab
+        Document and provide low-level technical backup for findings
+        Establish and present a timeline of the attacker's activities

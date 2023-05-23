@@ -1,0 +1,213 @@
+    The Mindset of the Professional Pen Tester
+    Building a World-Class Pen Test Infrastructure
+    Creating Effective Pen Test Scopes and Rules of Engagement
+    Reconnaissance of the Target Organization, Infrastructure, and Users
+    Tips for Awesome Scanning
+    Version Scanning with Nmap
+    False-Positive Reduction
+    Netcat for the Pen TesterGetting the Most Out of Nmap
+    Faster Scanning with Masscan
+    OS Fingerprinting, Version Scanning In-Depth, Netcat for Penetration Testers, and EyeWitness
+    Nmap In-Depth: The Nmap Scripting Engine
+
+
+    Gaining Initial Access
+    Password Guessing, Spraying, and Credential Stuffing
+    Exploitation and Exploit Categories
+    Exploiting Network Services and Leveraging Meterpreter
+    Command and Control Frameworks and Selecting the One for You
+    Using the Adversary Emulation and Red Team Framework, Sliver
+    Post-Exploitation with [PowerShell] Empire
+    Payload Generation in Metasploit and Sliver
+    Post-Exploitation
+    Assumed Breach Testing
+    Situational Awareness on Linux and Windows
+    Extracting Useful Information from a Compromised Windows Host with Seatbelt
+
+
+
+
+    Privilege Escalation Methods and Techniques on Windows and Linux
+    Identifying Attack Paths with BloodHound
+    Persistence and Maintaining Access
+    Password Attack Tips
+    Retrieving and Manipulating Hashes from Windows, Linux, and Other Systems
+    Extracting Hashes and Passwords from Memory with Mimikatz Kiwi
+    Effective Password Cracking with John the Ripper and Hashcat
+    Poisoning Multicast Name Resolution with Responder
+
+    Lateral Movement
+    Running Commands Remotely
+    Attacking and Abusing Network Protocols with Impacket
+    Anti-Virus and Evasion of Defensive Tools
+    Application Control Bypasses Using Built-In Windows Features
+    Implementing Port Forwarding Relays via SSH for Merciless Pivots
+    Pivoting through Target Environments with C2
+    Effective Reporting and Business Communication
+
+    Kerberos Authentication Protocol
+    Kerberoasting for Domain Privilege Escalation and Credential Compromise
+    Persistent Administrative Domain Access
+    Evaluating and Attacking AD CS
+    Obtaining NTDS.dit and Extracting Domain Hashes
+    Golden and Silver Ticket Attacks for Persistence
+    Additional Kerberos Attacks Including Skeleton Key, Over-Pass-the-Hash, and Pass-the-Ticket
+    Effective Domain Privilege Escalation
+    Azure and Azure AD Reconnaissance
+    Azure Password Attacks and Spraying
+    Understanding Azure Permissions
+    Running Commands on Azure Hosts
+    Tunneling with Ngrok
+    Lateral Movement in Azure
+
+    Applying Penetration Testing and Ethical Hacking Practices End-to-End
+    Detailed Scanning to Find Vulnerabilities and Avenues to Entry
+    Exploitation to Gain Control of Target Systems
+    Post-Exploitation to Determine Business Risk
+    Merciless Pivoting
+    Analyzing Results to Understand Business Risk and Devise Corrective Actions
+
+
+Pentesting
+    Overview of the web from a penetration tester's perspective
+    Web application assessment methodologies
+    The penetration tester's toolkit
+    Interception proxies
+    Proxying SSL through BurpSuite Pro and Zed Attack Proxy
+    DNS reconnaissance
+    Virtual host discovery
+    Open-source intelligence (OSINT)
+    The HTTP protocol
+    Secure Sockets Layer (SSL) configurations and weaknesses
+    Target discovery and profiling
+
+    Configuration flaws
+
+    Logging and monitoring
+    Learning tools to spider a website
+    Analyzing website content
+    Brute forcing unlinked files and directories via ZAP and ffuf
+    Web authentication mechanisms
+    Fuzzing with Burp Intruder
+    Username harvesting and password guessing
+    Burp sequencer
+    Session management and attacks
+    Authentication and authorization bypass
+    Mutillidae
+
+    HTTP resonse security controls
+    Command injection
+    Directory traversal
+    Local File Inclusion (LFI)
+    Remote File Inclusion (RFI)
+    Insecure deserialization
+    SQL injection
+    Blind SQL injection
+    Error-based SQL injection
+    Exploiting SQL injection
+    SQL injection tools: sqlmap
+
+    Cross-Site Scripting (XSS)
+    Browser Exploitation Framework (BeEF)
+    AJAX
+    XML and JSON
+    Document Object Model (DOM)
+    API attacks
+    Data attacks
+    REST and SOAP
+    Server-Side Request Forgery (SSRF)
+    XML Eternal Entity (XXE)
+
+    Cross-Site Request Forgery (CSRF)
+    Logic attacks
+    Python for web app penetration testing
+    WPScan
+    ExploitDB
+    BurpSuite Pro scanner
+    Nuclei
+    Metasploit
+    When tools fail
+    Business of Penetration Testing:
+        Preparation
+        Post Assessment and Reporting
+
+
+Enterprise and Cloud Threat and Vulnerability Assessment
+    Maximizing Value from Vulnerability Assessments and Programs
+    Strategic and Tactical Vulnerability Management Approaches
+    Patch Management and Remediation Strategies
+    Setting Up for Success at Scale: Enterprise Architecture and Strategy
+    Developing Transformational Vulnerability Assessment Strategies
+    Performing Enterprise Threat Modelling
+    Threat-Centric Threat Modeling (TCTM) with VECTR
+    System-Centric Threat Modeling (SCTM) with Threat Modeler
+    Generating Compounding Interest from Threat Intelligence and Avoiding Information Overload
+    The Vulnerability Assessment Framework
+    Vulnerability Data Management Tools and Techniques
+    Overview of Comprehensive Network Scanning
+    Compliance Standards and Information Security
+    Team Operations and Collaboration
+    Discovering Open-Source Disclosure and Understanding these Risks
+    Cloud Information Disclosure Vulnerabilities and Open-Source Intelligence Gathering (OSINT)
+
+    PowerShell Operations for Discovery
+    Automating Vulnerability Assessment Tasks with PowerShell
+    Active and Passive Reconnaissance
+    Reconnaissance Frameworks
+    Identification and Enumeration with DNS
+    DNS Zone Speculation and Dictionary-Enabled Discovery
+    Port Scanning with Nmap and Zenmap
+    Scanning Large-Scale Environments
+    Commonplace Services
+    Scanning the Network Perimeter and Engaging the DMZ
+    Cloud Technology Fundamentals
+    Identifying Cloud Vulnerabilities with First-Party Tools like Amazon Inspector
+    Identifying Cloud Vulnerabilities with Third-Party Tools like SpiderfootHXTrade-offs: Speed, Efficiency, Accuracy, and Thoroughness
+    The Fundamentals of the Enterprise Cloud
+    Scanning the Enterprise Cloud
+
+    Assigning a Confidence Value and Validating Exploitative Potential of Vulnerabilities
+    Enhanced Vulnerability Scanning
+    Risk Assessment Matrices and Rating Systems
+    Quantitative Analysis Techniques Applied to Vulnerability Scoring
+    Performing Tailored Risk Calculation to Drive Triage
+    General Purpose vs. Application-Specific Vulnerability Scanning
+    Tuning the Scanner to the Task, the Enterprise, and Tremendous Scale
+    Scan Policies and Compliance Auditing
+    Performing Vulnerability Discovery with Open-Source and Commercial Appliances
+    Scanning with the Nmap Scripting Engine, Nexpose/InsightVM, and Acunetix
+    The Windows Domain: Exchange, SharePoint, and Active Directory
+    Testing for Insecure Cryptographic Implementations Including SSL
+    Assessing VOIP Environments
+    Discovering Vulnerabilities in the Enterprise Backbone: Active Directory, Exchange, and SharePoint
+    Minimizing Supplemental Risk while Conducting Authenticated Scanning through Purposeful Application of Least Privilege
+    Probing for Data Link Liability to Identify Hazards in Wireless Infrastructure, Switches, and VLANs
+    Manual Vulnerability Discovery Automated to Attain Maximal Efficacy
+    Enterprise Cloud Vulnerability Discovery
+
+    Recruiting Disparate Data Sources: Patches, Hotfixes, and Configurations
+    Manual Vulnerability Validation Targeting Enterprise Infrastructure
+    Converting Disparate Datasets into a Central, Normalized, and Relational Knowledge Base
+    Managing Large Repositories of Vulnerability Data
+    Querying the Vulnerability Knowledge Base
+    Evaluating Vulnerability Risk in Custom and Unique Systems, including Web Applications
+
+    Analyzing User Password Selection and Addressing Underlying Vulnerabilities
+    Creating and Navigating Vulnerability Prioritization
+    Domain Password Auditing
+    Discovering Negative Security Policy Implementation
+    Developing a Web of Network and Host Affiliations
+    Modeling Account Relationships on Active Directory Forests
+    Designing Vulnerability Mitigations and Compensating Controls
+    Azure AD Password Protection
+    Creating Effective Vulnerability Assessment Reports
+    Transforming Triage Listing into the Vulnerability Remediation Plan
+    Kerberos and Domain Authentication
+    Closure: Be a Positive Influence in the Context of the Global Information Security Crisis
+
+    Tactical Employment of the Vulnerability Assessment Framework
+    Threat Modeling
+    Discovery
+    Vulnerability Scanning
+    Validation
+    Data Management and Triage
