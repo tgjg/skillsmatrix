@@ -4,7 +4,9 @@ public enum GeneralSkillTypeEnum {
     INFORMED,
     MANAGER,
     ARCHITECT,
+    TECHNICIAN,
     IMPLEMENTOR,
     DEVELOPER,
-    CONSULTANT
+    CONSULTANT,
+    TRAINER
 }

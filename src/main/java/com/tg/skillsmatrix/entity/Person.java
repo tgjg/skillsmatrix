@@ -1,19 +1,22 @@
 package com.tg.skillsmatrix.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
+@Getter
+@Setter
 public class Person {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name = "person_id")
+    private Long personId;
 
-    public Long getId() {
-        return id;
-    }
+    @OneToMany(mappedBy = "person", cascade = { CascadeType.PERSIST, CascadeType.MERGE } )
+    private Set<PersonSkills> personSkillsSet = new HashSet<>();
 
-    public void setId(Long id) {
-        this.id = id;
-    }
 }

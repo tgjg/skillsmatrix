@@ -10,4 +10,5 @@ public class SkillsMatrixApplication {
         SpringApplication.run(SkillsMatrixApplication.class, args);
     }
 
+
 }
