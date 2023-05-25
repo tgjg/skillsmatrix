@@ -3,6 +3,7 @@ package com.tg.skillsmatrix.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.tg.skillsmatrix.Type.SkillDetailTypeEnum;
 import com.tg.skillsmatrix.Type.SkillExperienceEnum;
+
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

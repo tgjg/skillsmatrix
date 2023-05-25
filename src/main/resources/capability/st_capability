@@ -1,0 +1,92 @@
+SOC
+	SIEM
+    End Point Detection and Response
+	Extended Detection and Response
+	Add new Log Sources
+	User and Entity Behaviour Analytics
+	Network Detection and Response
+	Identity Threat Detection and Response
+	Security Analytics & Intelligence Layer
+	Playbooks to support other features
+
+Identity
+	Identity Governance (including Audit)
+	Users - Apply Least Privilege to Apps (Just Enough Access)
+	Passwordless / MFA
+	Adaptive authentication
+	Adaptive authorisation
+	PAM (inc Privileged Access Workstations)
+	ZTNA
+	RBAC
+	Switch Replacement
+	Network Access Control
+	Apply JIT & JEA + No standing privilege
+	Fusion Team
+	Identity Fabric
+	HR Integration
+	PKI Services
+	Rolling out AD across all XL, L and M sites.
+
+Asset Management
+	Asset Register updated
+	Dynamic Asset Gathering (Oly applied to small sites
+	Attribute Augmentation
+
+Data
+	DLP
+	Insider Risk
+	Data at Rest (Additional Sensitive Systems)
+	Data in Transit (Additional Senstive systems)
+	Integration Encryption
+	Encrypt Traffic on All networks
+	File Based Encryption (any location)
+
+SWG
+	CASB and Federation (SaaS granular and adaptive access)
+	FWaaS
+	ZTNA (Covered in Identity)
+	Browser Isolation
+	Shadow IT (web in AMP 7)
+	Cloud Security Posture Management
+	Data Security (Covered in Data Security)
+	Secure Admin Cloud & Web
+	Adaptive Access Control (covered in Identity)
+	Advanced Threat Detection  (covered in Identity)
+	Attack Surface Management
+
+Meshed Architecture
+	Architectural approach to improve interoperability
+	Centralized policy and posture layer & Identity fabric layer
+	Operations dashboard layer
+	Security intelligence layer
+
+Network
+	SDWAN
+	Micro-Segmentation
+	Zero Trust Proxy
+
+Centralised Policy
+	Building zero trust policies to enforce
+
+Culture
+	Build Base Culture programme
+	Build ZTA Culture Programme Addition
+	Rollout to Technology
+	Rollout to business
+	Rollout to champions
+	Skilling up for the tools created
+
+Discovery Phase
+	Risk Assessment & Prioritised plan
+	Build toolset
+	Partner Selection
+
+Shared Documentation
+	Pattern / Standards / Reference Architecture
+
+Device
+	Improve VDI solution for OT to bring inline with enhanced security
+
+Governance
+	Maturity Assessment
+	Remediation Of Maturity Assessment
