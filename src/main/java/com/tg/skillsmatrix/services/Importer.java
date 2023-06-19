@@ -87,13 +87,17 @@ public class Importer {
             throw new RuntimeException(e);
         }
 
-        update_role_and_function_repository();
+
 
         coreCyberSkillRepository.saveAll(coreCyberSkillList);
         cyberRoleRepository.saveAll(cyberRoleMap.values());
         cyberFunctionRepository.saveAll(cyberFunctionMap.values());
 
+        update_role_and_function_repository();
 
+        coreCyberSkillRepository.saveAll(coreCyberSkillList);
+        cyberRoleRepository.saveAll(cyberRoleMap.values());
+        cyberFunctionRepository.saveAll(cyberFunctionMap.values());
 
     }
 
