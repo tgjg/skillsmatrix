@@ -16,7 +16,7 @@ public class Person {
     @Column(name = "person_id")
     private Long personId;
 
-    @OneToMany(mappedBy = "person", cascade = { CascadeType.PERSIST, CascadeType.MERGE } )
-    private Set<PersonSkills> personSkillsSet = new HashSet<>();
+    @ManyToMany
+    private Set<CyberRole> cyberRoleSet = new HashSet<>();
 
 }

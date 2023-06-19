@@ -11,18 +11,21 @@ import java.util.Set;
 @Entity
 @Getter
 @Setter
-public class SkillDetail {
+public class CoreCyberSkill {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "skill_detail_id")
     private Long skillDetailId;
 
     private String skillDetailName;
-    private String skillDetailDescription;
-    private SkillDetailTypeEnum skillDetailTypeEnum = SkillDetailTypeEnum.UNDEFINED;
+    private String skillRole;
 
-    @OneToMany(mappedBy = "skillDetail", cascade = { CascadeType.PERSIST, CascadeType.MERGE } )
-    private Set<SkillsDetailGeneral> skillsDetailGeneralSet = new HashSet<>();
+    public CoreCyberSkill() {
 
+    }
+    public CoreCyberSkill(String coreCyberSkill, String cyberRole) {
+        this.skillDetailName = coreCyberSkill;
+        this.skillRole = cyberRole;
+    }
 
 }
