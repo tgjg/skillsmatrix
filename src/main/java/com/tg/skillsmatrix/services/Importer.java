@@ -6,7 +6,6 @@ import com.tg.skillsmatrix.entity.CyberRole;
 import com.tg.skillsmatrix.repository.CoreCyberSkillRepository;
 import com.tg.skillsmatrix.repository.CyberFunctionRepository;
 import com.tg.skillsmatrix.repository.CyberRoleRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
@@ -21,11 +20,9 @@ public class Importer {
 
     List<CoreCyberSkill> coreCyberSkillList = new ArrayList<>();
     Map<String,CyberRole> cyberRoleMap = new HashMap<>();
-
     Map<String, CyberFunction> cyberFunctionMap = new HashMap<>();
-
     Map<String, Set<String>> cyberRoleCyberFunctionMap = new HashMap<>();
-
+    Map<String, CoreCyberSkill> coreCyberSkillMap = new HashMap<>();
 
     public Importer(CoreCyberSkillRepository coreCyberSkillRepository,
             CyberRoleRepository cyberRoleRepository, CyberFunctionRepository cyberFunctionRepository) {
@@ -39,45 +36,48 @@ public class Importer {
 
         BufferedReader reader;
 
-
-
         try {
             reader = new BufferedReader(new FileReader("/home/tony/work/skillsmatrix/SkillsMatrix/src/main/resources/import/core_skills.csv"));
             String entry ;
 
+            CyberRole cyberRole = null;
+            CyberFunction cyberFunction = null;
+            CoreCyberSkill coreSkill = null;
+
             while ( (entry = reader.readLine())!= null) {
                 String[] parts = entry.split(",");
-                CoreCyberSkill coreSkill = new CoreCyberSkill(parts[0], parts[1]);
+                coreSkill = new CoreCyberSkill(parts[0], parts[1]);
+                coreCyberSkillMap.put(parts[0], coreSkill);
 
                 if ( !cyberRoleMap.containsKey(parts[1])) {
-                    CyberRole cyberRole = new CyberRole(parts[1]);
+                    cyberRole = new CyberRole(parts[1]);
                     cyberRoleMap.put(parts[1], cyberRole);
                 }
-
-                if ( !cyberFunctionMap.containsKey(parts[2])) {
-                    CyberFunction cyberFunction = new CyberFunction(parts[2]);
-                    cyberFunctionMap.put(parts[2], cyberFunction);
-                    update_role_and_function_map(parts[1], parts[2]);
+                else {
+                    cyberRole = cyberRoleMap.get(parts[1]);
                 }
 
-                if ( parts.length == 4 ) {
-                    if ( !cyberFunctionMap.containsKey(parts[3])) {
-                        CyberFunction cyberFunction = new CyberFunction(parts[3]);
-                        cyberFunctionMap.put(parts[3], cyberFunction);
-                        update_role_and_function_map(parts[1], parts[3]);
-                    }
+                // primary function
+                if ( parts.length > 2) {
+                    update_function_map(parts[2], cyberRole);
+                    coreSkill = update_core(parts[2], coreSkill);
+                    //update_role_and_function_map(parts[1], parts[2]);
                 }
 
-                if ( parts.length == 5 ) {
-                    if ( !cyberFunctionMap.containsKey(parts[4])) {
-                        CyberFunction cyberFunction = new CyberFunction(parts[4]);
-                        cyberFunctionMap.put(parts[4], cyberFunction);
-                        update_role_and_function_map(parts[1], parts[4]);
-                    }
+                // secondary function
+                if ( parts.length > 3 ) {
+                    update_function_map(parts[3], cyberRole);
+                    coreSkill = update_core(parts[3], coreSkill);
+                    //update_role_and_function_map(parts[1], parts[3]);
+                }
+
+                if ( parts.length > 4 ) {
+                    update_function_map(parts[4], cyberRole);
+                    coreSkill = update_core(parts[4], coreSkill);
+                    //update_role_and_function_map(parts[1], parts[4]);
                 }
 
                 coreCyberSkillList.add(coreSkill);
-
 
             }
 
@@ -87,46 +87,47 @@ public class Importer {
             throw new RuntimeException(e);
         }
 
-
-
         coreCyberSkillRepository.saveAll(coreCyberSkillList);
         cyberRoleRepository.saveAll(cyberRoleMap.values());
         cyberFunctionRepository.saveAll(cyberFunctionMap.values());
 
-        update_role_and_function_repository();
+        //update_role_and_function_repository();
 
-        coreCyberSkillRepository.saveAll(coreCyberSkillList);
-        cyberRoleRepository.saveAll(cyberRoleMap.values());
-        cyberFunctionRepository.saveAll(cyberFunctionMap.values());
+        //coreCyberSkillRepository.saveAll(coreCyberSkillList);
+        //cyberRoleRepository.saveAll(cyberRoleMap.values());
+        //cyberFunctionRepository.saveAll(cyberFunctionMap.values());
 
+        return;
     }
 
-    private void update_role_and_function_map(String role, String function) {
-        Set<String> functionSet = this.cyberRoleCyberFunctionMap.get(role);
-        if ( functionSet == null) {
-            functionSet = new HashSet<>();
-        }
-        if (!functionSet.contains(function)) {
-            functionSet.add(function);
-            cyberRoleCyberFunctionMap.put(role, functionSet);
-        }
-
-    }
-
-    private void update_role_and_function_repository() {
-
-        Iterator<Map.Entry<String, Set<String>>> it = cyberRoleCyberFunctionMap.entrySet().iterator();
-        while (it.hasNext() ) {
-            Map.Entry<String, Set<String>> entry = it.next();
-            CyberRole cyberRole = cyberRoleMap.get(entry.getKey());
-            Set<CyberFunction> fnSet = new HashSet<>();
-            for ( String function : entry.getValue()) {
-                fnSet.add(cyberFunctionMap.get(function));
+    private void update_function_map(String function, CyberRole cyberRole) {
+        CyberFunction cyberFunction = null;
+        if ( !cyberFunctionMap.containsKey(function)) {
+            if (function.isEmpty()) {
+                return;
             }
-            cyberRole.setCyberFunctionSet(fnSet);
-            cyberRoleMap.put(entry.getKey(), cyberRole);
+            cyberFunction = new CyberFunction(function);
         }
+        else {
+            cyberFunction = cyberFunctionMap.get(function);
+        }
+        cyberFunction.getCyberRoleSet().add(cyberRole);
+
+        cyberFunctionMap.put(function, cyberFunction);
+        cyberRole.getCyberFunctionSet().add(cyberFunction);
     }
+
+    private CoreCyberSkill update_core(String function, CoreCyberSkill coreCyberSkill) {
+        CyberFunction cyberFunction = cyberFunctionMap.get(function);
+        coreCyberSkill.getCyberFunctionSet().add(cyberFunction);
+
+        cyberFunction.getCoreCyberSkillSet().add(coreCyberSkill);
+
+        return coreCyberSkill;
+
+    }
+
+
 }
 
 

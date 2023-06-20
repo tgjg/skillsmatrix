@@ -26,6 +26,9 @@ public class CyberFunction {
         this.cyber_function_name = cyber_function_name;
     }
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     private Set<CyberRole> cyberRoleSet = new HashSet<>();
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    private Set<CoreCyberSkill> coreCyberSkillSet = new HashSet<>();
 }

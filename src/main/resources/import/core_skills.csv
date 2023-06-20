@@ -1,0 +1,255 @@
+Advanced Persistent Threat (APT) Detection and Mitigation,Security Engineering,Security Analysis,Security Testing
+Advanced Threat Analytics and Behavioral Analysis,Security Engineering,Security Analysis,Security Testing
+Application Security Testing,Security Engineering,Security Testing,Application Security
+Business Continuity Planning,Security Risk and Compliance,Business Continuity,Security Strategy
+Certificate Management,Other,Cryptography and Certificate Management,Servers and Infrastructure Services
+Cloud Penetration Testing,Security Engineering,Cloud Security,Security Testing
+Cloud Security,Security Architecture,Cloud Security,Security Strategy
+Cloud Security Architecture,Security Architecture,Cloud Security,Security Strategy
+Compliance and Regulatory Knowledge,Security Risk and Compliance,Security Risk,Compliance and Security Audit
+Cryptocurrency and Blockchain Security,Security Engineering,Cryptography and Certificate Management,Application Security
+Cyber Threat Intelligence Gathering,Security Engineering,Security Analysis,Security Testing
+Data Backup and Recovery,Other,Data Security,Information Management
+Data Breach Response Plan Documentation,Security Architecture,Data Security,Security Strategy
+Data Breach Response Plan Testing,Security Operations,Data Security,Security Testing
+Data Breach Response Planning,Security Architecture,Data Security,Security Strategy
+Data Center Firewall Configuration,Security Engineering,Network Security,Servers and Infrastructure Services
+Data Center Security,Security Architecture,Security Strategy,Servers and Infrastructure Services
+Data Classification and Handling,Security Architecture,Data Security,Information Management
+Data Classification Policies and Procedures,Security Architecture,Data Security,Compliance and Security Audit
+Data Encryption Standards and Algorithms,Security Architecture,Cryptography and Certificate Management,Data Security
+Data Governance and Privacy Compliance,Security Risk and Compliance,Data Security,Compliance and Security Audit
+Data Leakage Detection and Prevention,Security Engineering,Data Security,Information Management
+Data Leakage Incident Response,Security Operations,Security Response,Data Security
+Data Loss Incident Response,Security Operations,Security Response,Data Security
+Data Loss Prevention (DLP),Security Architecture,Data Security,Information Management
+Data Loss Prevention (DLP) Incident Response,Security Operations,Data Security,Security Response
+Data Loss Prevention (DLP) Policy Configuration,Security Engineering,Data Security,Compliance and Security Audit
+Data Masking and Anonymisation,Security Architecture,Data Security,Information Management
+Data Privacy and Protection,Security Architecture,Data Security,Information Management
+Data Retention and Destruction Implementation,Security Engineering,Data Security,Information Management
+Data Retention and Destruction Policies,Security Risk and Compliance,Data Security,Information Management
+Data Retention Policies and Procedures,Security Risk and Compliance,Data Security,Compliance and Security Audit
+Database Activity Monitoring (DAM),Other,Data Security,Information Management
+Database Security,Other,Data Security,Servers and Infrastructure Services
+Database Security Scanning Tools,Other,Data Security,Security Testing
+Digital Forensics,Other,Security Analysis,Security Testing
+Digital Rights Management (DRM),Security Architecture,Data Security,Information Management
+Disaster Recovery Planning,Security Management,Business Continuity,Security Strategy
+Embedded Systems Security,Security Engineering,ICS and IoT Security,Application Security
+Encryption and Cryptography,Security Engineering,Cryptography and Certificate Management,Servers and Infrastructure Services
+Endpoint Protection and Detection,Security Architecture,Desktop and Servers,End User Devices
+Firewall Configuration and Management,Security Engineering,Network Security,Servers and Infrastructure Services
+Firewall Configuration Review and Optimization,Security Engineering,Network Security,Security Analysis
+Firewall Log Analysis and Monitoring,Security Operations,Network Security,Security Analysis
+Firewall Rule Analysis and Optimization,Security Engineering,Network Security,Security Testing
+Firewall Rule Review and Optimization,Security Risk and Compliance,Network Security,Security Testing
+Privileged Identity Management (PIM),Security Engineering,Identity and Access Management (IAM),Servers and Infrastructure Services
+Privileged Access Management (PAM),Security Engineering,Identity and Access Management (IAM),Servers and Infrastructure Services
+Identity and Access Management (IAM),Security Engineering,Identity and Access Management (IAM),Servers and Infrastructure Services
+Identity Governance and Administration,Security Engineering,Identity and Access Management (IAM),Compliance and Security Audit
+Incident Forensics,Security Operations,Security Response,Security Testing
+Incident Management,Security Operations,Security Response,Security Strategy
+Incident Response and Management,Security Operations,Security Response,Security Strategy
+Incident Response Plan (IRP) Documentation,Security Operations,Security Response,Soft Skills
+Incident Response Plan (IRP) Review and Updates,Security Operations,Security Response,Compliance and Security Audit
+Incident Response Plan (IRP) Tabletop Exercise Facilitation,Security Operations,Security Response,Soft Skills
+Incident Response Plan Documentation,Security Operations,Security Response,Soft Skills
+Industrial Control Systems (ICS) Security,Security Engineering,ICS and IoT Security,Servers and Infrastructure Services
+Insider Threat Detection and Prevention,Security Engineering,Security Analysis,Servers and Infrastructure Services
+Intrusion Detection and Prevention,Security Operations,IDS/IPS,Security Testing
+Intrusion Detection System (IDS) Log Analysis,Security Operations,IDS/IPS,Security Testing
+Intrusion Detection System (IDS) Log Management,Security Operations,IDS/IPS,Security Testing
+Intrusion Detection System (IDS) Management,Security Operations,IDS/IPS,Security Testing
+Intrusion Detection System (IDS) Rule Development,Security Engineering,IDS/IPS,Security Testing
+Intrusion Detection System (IDS) Rule Tuning,Security Engineering,IDS/IPS,Security Testing
+Intrusion Prevention System (IPS) Log Analysis,Security Operations,IDS/IPS,Security Testing
+Intrusion Prevention System (IPS) Log Management and Analysis,Security Operations,IDS/IPS,Security Testing
+Intrusion Prevention System (IPS) Management,Security Operations,IDS/IPS,Soft Skills
+Intrusion Prevention System (IPS) Rule Development,Security Engineering,IDS/IPS,Security Testing
+Log Analysis and Security Event Correlation,Security Operations,Security Analysis,IDS/IPS
+Malware Analysis and Reverse Engineering,Security Operations,Security Analysis,Security Testing
+Mobile Application Security,Security Engineering,Application Security,Servers and Infrastructure Services
+Mobile Device Encryption,Security Engineering,Cryptography and Certificate Management,End User Devices
+Mobile Device Encryption Implementation,Security Engineering,Cryptography and Certificate Management,End User Devices
+Mobile Device Encryption Policies and Procedures,Security Risk and Compliance,Cryptography and Certificate Management,End User Devices
+Mobile Device Management (MDM) and Security,Security Architecture,End User Devices,Data Security
+Mobile Device Management (MDM) Policy Development,Security Architecture,Compliance and Security Audit,Security Strategy
+Mobile Device Security Configuration,Security Engineering,End User Devices,Application Security
+Mobile Device Security Incident Analysis,Security Operations,Security Analysis,End User Devices
+Mobile Device Security Incident Response,Security Operations,Security Response,End User Devices
+Mobile Device Security Monitoring,Security Engineering,IDS/IPS,End User Devices
+Mobile Device Security Policy Development,Security Risk and Compliance,Compliance and Security Audit,End User Devices
+Mobile Device Security Policy Review,Security Risk and Compliance,Compliance and Security Audit,End User Devices
+Mobile Device Security Testing Tools,Security Engineering,Security Testing,End User Devices
+Network Access Control (NAC),Security Engineering,Network Security,Servers and Infrastructure Services
+Network Protocol Analysis,Security Engineering,Security Analysis,Network Security
+Network Security,Security Engineering,Network Security,Security Strategy
+Network Segmentation,Security Engineering,Network Security,Security Strategy
+Network Traffic Analysis,Security Engineering,Security Analysis,Servers and Infrastructure Services
+Network Traffic Monitoring and Analysis,Security Engineering,IDS/IPS,Servers and Infrastructure Services
+Office 365 Security,Security Engineering,End User Devices,Application Security
+Patch Management System Administration,Other,Servers and Infrastructure Services,End User Devices
+Patch Management System Implementation,Other,Servers and Infrastructure Services,End User Devices
+Patch Management System Optimization,Other,Servers and Infrastructure Services,Security Strategy
+Phishing Awareness Training,Security Risk and Compliance,Awareness & Training,Soft Skills
+Physical Security,Security Management,Soft Skills,Business Continuity
+Power Platform Security Administration,Security Engineering,Application Security,Servers and Infrastructure Services
+Regulatory Compliance Auditing,Security Risk and Compliance,Compliance and Security Audit,Soft Skills
+Risk Assessment and Management,Security Risk and Compliance,Compliance and Security Audit,Soft Skills
+Risk Register Development and Management,Security Risk and Compliance,Compliance and Security Audit,Soft Skills
+Secure Cloud Access Security Broker (CASB) Implementation,Security Engineering,Cloud Security,Servers and Infrastructure Services
+Secure Cloud Migration,Security Architecture,Cloud Security,Security Strategy
+Secure Coding Practices,Security Engineering,SecDevOps,Application Security
+Secure Configuration Management,Security Engineering,SecDevOps,Servers and Infrastructure Services
+Secure Configuration Review and Audit,Security Engineering,SecDevOps,Compliance and Security Audit
+Secure DevOps,Security Engineering,SecDevOps,Application Security
+Secure DNS Configuration,Security Engineering,Servers and Infrastructure Services,Network Security
+Secure DNS Filtering,Security Engineering,Servers and Infrastructure Services,Network Security
+Secure DNS Filtering Configuration,Security Engineering,Servers and Infrastructure Services,Network Security
+Secure DNS Infrastructure Configuration,Security Engineering,Servers and Infrastructure Services,Network Security
+Secure DNS Infrastructure Design,Security Architecture,Servers and Infrastructure Services,Network Security
+Secure DNS Server Configuration,Security Engineering,Servers and Infrastructure Services,Network Security
+Secure Email and Messaging Systems,Security Architecture,Servers and Infrastructure Services,Application Security
+Secure Email Gateway Configuration,Security Engineering,Servers and Infrastructure Services,Application Security
+Secure Email Server Configuration,Security Engineering,Servers and Infrastructure Services,Application Security
+Secure Email Server Management,Security Engineering,Servers and Infrastructure Services,Application Security
+Secure File Transfer,Security Engineering,Servers and Infrastructure Services,Application Security
+Secure File Transfer Protocol (SFTP),Security Engineering,Servers and Infrastructure Services,Application Security
+Secure Instant Messaging and Collaboration Tools,Security Architecture,Servers and Infrastructure Services,Application Security
+Secure Instant Messaging Policy Development,Security Risk and Compliance,Compliance and Security Audit,Application Security
+Secure Instant Messaging Tools,Security Architecture,Servers and Infrastructure Services,Application Security
+Secure Internet of Things (IoT) Devices,Security Architecture,Servers and Infrastructure Services,Application Security
+Secure Mobile Application Development,Security Architecture,Application Security,End User Devices
+Secure Network Architecture Design,Security Architecture,Network Security,Security Strategy
+Secure Network Design and Review,Security Architecture,Network Security,Security Strategy
+Secure Remote Access Technologies,Security Architecture,Network Security,Servers and Infrastructure Services
+Secure Remote Access VPN Implementation,Security Engineering,Network Security,Servers and Infrastructure Services
+Secure Remote Desktop Protocol (RDP) Configuration,Security Engineering,Security Engineering,Servers and Infrastructure Services
+Secure Remote Desktop Services,Security Architecture,Security Engineering,Servers and Infrastructure Services
+Secure SDLC (Software Development Life Cycle),Security Architecture,Security Engineering,Servers and Infrastructure Services
+Secure Shell (SSH) Implementation,Security Engineering,Security Engineering,Servers and Infrastructure Services
+Secure Software Development Life Cycle (SDLC) Implementation,Security Engineering,SecDevOps,Application Security
+Secure Virtual Private Network (VPN) Implementation,Security Engineering,Network Security,Servers and Infrastructure Services
+Secure Virtualization Technologies,Security Architecture,Cloud Security,Servers and Infrastructure Services
+Secure Web Application Development Frameworks,Security Engineering,Application Security,SecDevOps
+Secure Web Application Development Principles,Security Architecture,Application Security,SecDevOps
+Secure Web Application Development Tools,Security Engineering,Application Security,SecDevOps
+Secure Web Development Practices,Security Architecture,Application Security,SecDevOps
+Secure Web Gateway Configuration,Security Engineering,Application Security,Servers and Infrastructure Services
+Secure Web Gateway Management,Security Engineering,Network Security,Servers and Infrastructure Services
+Secure Web Gateway Troubleshooting,Security Engineering,Network Security,Security Analysis
+Secure Web Proxy Configuration,Security Engineering,Network Security,Servers and Infrastructure Services
+Secure Web Proxy Server Configuration,Security Engineering,Network Security,Servers and Infrastructure Services
+Secure Web Proxy Server Management,Security Engineering,Network Security,Servers and Infrastructure Services
+Secure Wireless Network Configuration,Security Engineering,Network Security,Servers and Infrastructure Services
+Secure Wireless Network Design,Security Architecture,Network Security,Security Strategy
+Security Architecture Design and Review,Security Architecture,Security Strategy,Servers and Infrastructure Services
+Security Assessment and Authorization,Security Risk and Compliance,Security Testing,Security Testing
+Security Assessment Report Writing,Security Architecture,Security Testing,Security Testing
+Security Auditing and Compliance,Security Risk and Compliance,Security Testing,Compliance and Security Audit
+Security Awareness and Training,Security Risk and Compliance,Awareness & Training,Soft Skills
+Security Awareness Program Development,Security Risk and Compliance,Awareness & Training,Soft Skills
+Security Awareness Training for Contractors and Vendors,Security Risk and Compliance,Awareness & Training,Soft Skills
+Security Awareness Training for Developers,Security Risk and Compliance,Awareness & Training,Soft Skills
+Security Awareness Training for Employees,Security Risk and Compliance,Awareness & Training,Soft Skills
+Security Awareness Training for Executives,Security Risk and Compliance,Awareness & Training,Soft Skills
+Security Awareness Training for IT Staff,Security Risk and Compliance,Awareness & Training,Soft Skills
+Security Awareness Training for Management,Security Risk and Compliance,Awareness & Training,Soft Skills
+Security Awareness Training for Remote Workers,Security Risk and Compliance,Awareness & Training,Soft Skills
+Security Awareness Training Measurement and Evaluation,Security Risk and Compliance,Awareness & Training,Soft Skills
+Security Awareness Training Program Development,Security Risk and Compliance,Awareness & Training,Soft Skills
+Security Consulting and Advisory,Security Architecture,Security Strategy,Soft Skills
+Security Control Framework Implementation,Security Engineering,Servers and Infrastructure Services,Security Strategy
+Security Control Testing and Validation,Security Engineering,Security Testing,Servers and Infrastructure Services
+Security Governance,Security Risk and Compliance,Compliance and Security Audit,Soft Skills
+Security Incident Handling Training,Security Operations,Awareness & Training,Soft Skills
+Security Incident Response Plan (SIRP) Development,Security Architecture,Security Response,Soft Skills
+Security Incident Response Plan (SIRP) Tabletop Exercise Documentation,Security Operations,Security Response,Soft Skills
+Security Incident Response Plan (SIRP) Tabletop Exercise Facilitation,Security Operations,Security Response,Soft Skills
+Security Incident Response Plan (SIRP) Testing,Security Operations,Security Response,Security Testing
+Security Incident Response Planning,Security Architecture,Security Response,Soft Skills
+Security Incident Response Playbook Development,Security Architecture,Security Response,Soft Skills
+Security Incident Response Tabletop Exercise Facilitation,Security Architecture,Security Response,Soft Skills
+Security Incident Response Tabletop Exercises,Security Architecture,Security Response,Soft Skills
+Security Incident Response Team (SIRT) Coordination,Security Architecture,Security Response,Soft Skills
+Security Incident Response Team (SIRT) Exercises,Security Architecture,Security Response,Soft Skills
+Security Incident Response Team (SIRT) Training,Security Architecture,Awareness & Training,Security Response
+Security Incident Response Training,Security Architecture,Awareness & Training,Soft Skills
+Security Information and Event Management (SIEM),Security Operations,IDS/IPS,Security Analysis
+Security Information and Event Management (SIEM) Administration,Security Operations,IDS/IPS,Soft Skills
+Security Information and Event Management (SIEM) Alert Tuning,Security Engineering,Security Analysis,Security Testing
+Security Information and Event Management (SIEM) Alerting,Security Operations,Security Response,IDS/IPS
+Security Information and Event Management (SIEM) Data Integration,Security Architecture,Data Security,Application Security
+Security Information and Event Management (SIEM) Log Parsing,Security Engineering,Security Analysis,IDS/IPS
+Security Information and Event Management (SIEM) Use Case Development,Security Architecture,IDS/IPS,Security Strategy
+Security Information and Event Management (SIEM) Use Case Tuning,Security Architecture,IDS/IPS,Security Strategy
+Security Information Exchange (SIE),Security Architecture,Security Analysis,Information Management
+Security Information Exchange Frameworks,Security Architecture,Security Analysis,Information Management
+Security Information Sharing and Collaboration,Security Architecture,Security Analysis,Information Management
+Security Information Sharing Platforms,Security Architecture,Servers and Infrastructure Services,Information Management
+Security Metrics and Reporting,Security Architecture,Information Management,Soft Skills
+Security Operations and Incident Response (SOAR),Security Operations,Security Analysis,IDS/IPS
+Security Operations Center (SOC) Dashboard Development,Security Operations,Information Management,Soft Skills
+Security Operations Center (SOC) Design,Security Architecture,Soft Skills,Servers and Infrastructure Services
+Security Operations Center (SOC) Incident Analysis,Security Operations,Security Analysis,Soft Skills
+Security Operations Center (SOC) Incident Response Playbook Development,Security Operations,Soft Skills,IDS/IPS
+Security Operations Center (SOC) Monitoring and Analysis,Security Operations,Security Analysis,Security Analysis
+Security Operations Center (SOC) Operations,Security Operations,Security Analysis,Security Analysis
+Security Operations Center (SOC) Performance Metrics,Security Operations,Information Management,Security Analysis
+Security Operations Center (SOC) Playbook Documentation,Security Operations,Soft Skills,Security Analysis
+Security Operations Center (SOC) Process Improvement,Security Operations,Soft Skills,Security Strategy
+Security Operations Center (SOC) Reporting,Security Operations,Soft Skills,Information Management
+Security Operations Center (SOC) Threat Hunting,Security Operations,Security Testing,Application Security
+Security Operations Center (SOC) Tool Evaluation and Selection,Security Operations,Security Testing,Application Security
+Security Operations Playbook Development,Security Operations,Soft Skills,Security Analysis
+Security Patch Management,Security Engineering,Servers and Infrastructure Services,End User Devices
+Security Policy Development,Security Risk and Compliance,Compliance and Security Audit,Soft Skills
+Security Policy Development and Review,Security Risk and Compliance,Security Strategy,Soft Skills
+Security Policy Review and Gap Analysis,Security Risk and Compliance,Security Strategy,Soft Skills
+Security Program Management,Security Management,Soft Skills,Security Strategy
+Security Risk Assessment,Security Risk and Compliance,Compliance and Security Audit,Soft Skills
+Security Risk Assessment Frameworks,Security Risk and Compliance,Security Strategy,Compliance and Security Audit
+Security Testing Methodologies,Security Engineering,Security Testing,SecDevOps
+Social Engineering Awareness and Prevention,Security Engineering,Awareness & Training,Soft Skills
+Social Media Security,Other,Information Management,Soft Skills
+Source Code Review,Security Engineering,Application Security,SecDevOps
+System Hardening,Security Engineering,Servers and Infrastructure Services,End User Devices
+Third-Party Vendor Risk Management,Security Risk and Compliance,Soft Skills,Security Strategy
+Threat Hunting,Security Operations,Security Analysis,Security Testing
+Threat Intelligence Analysis,Security Operations,Security Analysis,Information Management
+Threat Intelligence Platform Administration,Security Engineering,Security Analysis,Servers and Infrastructure Services
+Threat Modeling,Security Architecture,Security Analysis,Soft Skills
+Virtual Private Network (VPN) Configuration,Security Engineering,Network Security,Servers and Infrastructure Services
+Virtual Private Network (VPN) Troubleshooting,Security Engineering,Network Security,Servers and Infrastructure Services
+Virtual Private Network (VPN) Troubleshooting and Support,Security Engineering,Network Security,Servers and Infrastructure Services
+Voice over IP (VoIP) Security,Security Engineering,Network Security,Servers and Infrastructure Services
+Vulnerability Assessment and Penetration Testing (VAPT),Security Engineering,Security Testing,Application Security
+Vulnerability Management,Security Operations,Security Testing,Compliance and Security Audit
+Web Application Firewall (WAF) Configuration,Security Engineering,Application Security,SecDevOps
+Web Application Firewall (WAF) Management,Security Engineering,Application Security,Servers and Infrastructure Services
+Web Application Security,Security Engineering,Application Security,Servers and Infrastructure Services
+Web Application Security Testing Tools,Security Engineering,Application Security,Security Testing
+Web Application Vulnerability Assessment Tools,Security Operations,Application Security,Security Testing
+Web Application Vulnerability Remediation,Other,Application Security,Servers and Infrastructure Services
+Web Application Vulnerability Scanning,Security Operations,Application Security,Security Testing
+Web Browser Security Configuration,Security Engineering,Application Security,End User Devices
+Web Content Filtering,Security Engineering,Application Security,Network Security
+Web Server Security,Other,Application Security,Servers and Infrastructure Services
+Wireless Intrusion Detection System (WIDS) Management,Security Engineering,IDS/IPS,Servers and Infrastructure Services
+Wireless Intrusion Detection Systems (WIDS),Security Architecture,IDS/IPS,Servers and Infrastructure Services
+Wireless Intrusion Prevention System (WIPS) Management,Security Engineering,IDS/IPS,Servers and Infrastructure Services
+Wireless Intrusion Prevention System (WIPS) Monitoring,Security Operations,IDS/IPS,Servers and Infrastructure Services
+Wireless Intrusion Prevention Systems (WIPS),Security Architecture,IDS/IPS,Servers and Infrastructure Services
+Wireless Network Monitoring,Security Operations,IDS/IPS,Network Security
+Wireless Network Security,Security Architecture,Network Security,Servers and Infrastructure Services
+Wireless Penetration Testing,Security Engineering,Security Testing,Network Security
+Wireless Security Assessments,Security Engineering,Security Testing,Network Security
+Wireless Security Auditing,Security Risk and Compliance,Security Testing,Servers and Infrastructure Services
+Wireless Security Incident Analysis,Security Operations,Security Analysis,IDS/IPS
+Wireless Security Incident Response,Security Operations,Security Response,IDS/IPS
+Wireless Security Monitoring,Security Operations,IDS/IPS,Network Security
+Wireless Security Policies and Procedures,Security Risk and Compliance,Compliance and Security Audit,Soft Skills
+Wireless Security Protocols,Security Architecture,Security Strategy,Network Security
+Wireless Security Testing,Security Engineering,Security Testing,Network Security
+Wireless Site Surveys and Assessment,Security Engineering,Security Testing,Network Security

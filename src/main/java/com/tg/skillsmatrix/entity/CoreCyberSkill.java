@@ -14,17 +14,26 @@ import java.util.Set;
 public class CoreCyberSkill {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @Column(name = "skill_detail_id")
-    private Long skillDetailId;
+    @Column(name = "core_skill_id")
+    private Long core_skill_id;
 
-    private String skillDetailName;
+    private String core_skill_name;
     private String skillRole;
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(
+            name="core_skill_function",
+            joinColumns = @JoinColumn(name = "core_skill_id"),
+            inverseJoinColumns = @JoinColumn(name = "cyber_function_id")
+    )
+    private Set<CyberFunction> cyberFunctionSet = new HashSet<>();
+
 
     public CoreCyberSkill() {
 
     }
     public CoreCyberSkill(String coreCyberSkill, String cyberRole) {
-        this.skillDetailName = coreCyberSkill;
+        this.core_skill_name = coreCyberSkill;
         this.skillRole = cyberRole;
     }
 

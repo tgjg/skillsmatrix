@@ -16,7 +16,7 @@ public class Person {
     @Column(name = "person_id")
     private Long personId;
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     private Set<CyberRole> cyberRoleSet = new HashSet<>();
 
 }
