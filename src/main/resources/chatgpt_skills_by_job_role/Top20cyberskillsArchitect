@@ -1,39 +1,20 @@
-    Security Architecture Design: Ability to design and develop secure and resilient architectures that align with business goals and industry best practices.
-
-    Risk Assessment and Management: Proficiency in identifying and assessing security risks, as well as implementing risk mitigation strategies and controls.
-
-    Cloud Security Architecture: Expertise in designing secure cloud environments, including understanding cloud provider security controls, data protection, and identity and access management.
-
-    Network Security: Knowledge of secure network architecture, protocols, firewalls, and intrusion detection/prevention systems.
-
-    Secure Application Design: Understanding of secure software development practices and principles, including secure coding, authentication, and secure data handling.
-
-    Threat Modeling: Ability to identify potential threats, analyze attack vectors, and incorporate threat modeling into the design of secure architectures.
-
-    Identity and Access Management (IAM): Familiarity with IAM principles, including authentication, authorization, and identity federation across systems and applications.
-
-    Security Compliance and Standards: Knowledge of industry security frameworks and regulations (e.g., ISO 27001, NIST, GDPR) and the ability to ensure compliance within architectural designs.
-
-    Security Governance: Understanding of security governance frameworks, policies, and procedures to establish and enforce security standards and controls.
-
-    Cryptography: Knowledge of cryptographic algorithms, encryption, digital signatures, and secure key management.
-
-    Secure DevOps: Understanding of integrating security into DevOps processes, including secure configuration management and continuous security testing.
-
-    Incident Response and Management: Ability to develop and implement incident response plans and coordinate response efforts in case of security incidents.
-
-    Secure Infrastructure Design: Expertise in designing secure network infrastructure, including secure network segmentation, access controls, and secure remote access.
-
-    Security Testing and Assessment: Knowledge of security testing methodologies, such as vulnerability scanning, penetration testing, and code reviews, to assess the effectiveness of security controls.
-
-    Security Awareness and Training: Skills in developing and implementing security awareness programs to educate stakeholders on security best practices and policies.
-
-    Business Continuity and Disaster Recovery: Understanding of business continuity planning, including backup and recovery strategies, to ensure resilience in case of cybersecurity incidents.
-
-    Vendor and Third-Party Risk Management: Ability to assess and manage security risks associated with third-party vendors and conduct vendor assessments.
-
-    Secure Data Management: Understanding of data classification, data protection, and secure data handling practices to safeguard sensitive information.
-
-    Secure Mobile and IoT Architecture: Knowledge of securing mobile devices, IoT devices, and the associated infrastructure to protect against emerging threats.
-
-    Communication and Leadership: Strong interpersonal and communication skills to effectively collaborate with stakeholders, communicate complex security concepts, and provide guidance to technical teams.
+    Business Continuity and Disaster Recovery: Understanding of business continuity planning, including backup and recovery strategies, to ensure resilience in case of cybersecurity incidents.:Security Architect
+    Cloud Security Architecture: Expertise in designing secure cloud environments, including understanding cloud provider security controls, data protection, and identity and access management.:Security Architect
+    Communication and Leadership: Strong interpersonal and communication skills to effectively collaborate with stakeholders, communicate complex security concepts, and provide guidance to technical teams.:Security Architect
+    Cryptography: Knowledge of cryptographic algorithms, encryption, digital signatures, and secure key management.:Security Architect
+    Identity and Access Management (IAM): Familiarity with IAM principles, including authentication, authorization, and identity federation across systems and applications.:Security Architect
+    Incident Response and Management: Ability to develop and implement incident response plans and coordinate response efforts in case of security incidents.:Security Architect
+    Network Security: Knowledge of secure network architecture, protocols, firewalls, and intrusion detection/prevention systems.:Security Architect
+    Risk Assessment and Management: Proficiency in identifying and assessing security risks, as well as implementing risk mitigation strategies and controls.:Security Architect
+    Secure Application Design: Understanding of secure software development practices and principles, including secure coding, authentication, and secure data handling.:Security Architect
+    Secure Data Management: Understanding of data classification, data protection, and secure data handling practices to safeguard sensitive information.:Security Architect
+    Secure DevOps: Understanding of integrating security into DevOps processes, including secure configuration management and continuous security testing.:Security Architect
+    Secure Infrastructure Design: Expertise in designing secure network infrastructure, including secure network segmentation, access controls, and secure remote access.:Security Architect
+    Secure Mobile and IoT Architecture: Knowledge of securing mobile devices, IoT devices, and the associated infrastructure to protect against emerging threats.:Security Architect
+    Security Architecture Design: Ability to design and develop secure and resilient architectures that align with business goals and industry best practices.:Security Architect
+    Security Awareness and Training: Skills in developing and implementing security awareness programs to educate stakeholders on security best practices and policies.:Security Architect
+    Security Compliance and Standards: Knowledge of industry security frameworks and regulations (e.g., ISO 27001, NIST, GDPR) and the ability to ensure compliance within architectural designs.:Security Architect
+    Security Governance: Understanding of security governance frameworks, policies, and procedures to establish and enforce security standards and controls.:Security Architect
+    Security Testing and Assessment: Knowledge of security testing methodologies, such as vulnerability scanning, penetration testing, and code reviews, to assess the effectiveness of security controls.:Security Architect
+    Threat Modeling: Ability to identify potential threats, analyze attack vectors, and incorporate threat modeling into the design of secure architectures.:Security Architect
+    Vendor and Third-Party Risk Management: Ability to assess and manage security risks associated with third-party vendors and conduct vendor assessments.:Security Architect
