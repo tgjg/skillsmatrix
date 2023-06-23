@@ -30,5 +30,8 @@ public class CyberFunction {
     private Set<CyberRole> cyberRoleSet = new HashSet<>();
 
     @ManyToMany(cascade = CascadeType.ALL)
+    private Set<Person> personSet = new HashSet<>();
+
+    @ManyToMany(cascade = CascadeType.ALL)
     private Set<CoreCyberSkill> coreCyberSkillSet = new HashSet<>();
 }

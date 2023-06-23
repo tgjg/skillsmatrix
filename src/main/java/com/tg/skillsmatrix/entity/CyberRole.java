@@ -29,6 +29,7 @@ public class CyberRole {
         this.cyber_role_name = cyberRoleName;
     }
 
+
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
             name="role_person",

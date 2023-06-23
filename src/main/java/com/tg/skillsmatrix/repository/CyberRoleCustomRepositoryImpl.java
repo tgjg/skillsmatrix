@@ -17,4 +17,11 @@ public class CyberRoleCustomRepositoryImpl implements CyberRoleCustomRepository 
                 .setParameter("cyber_role_id", cyber_role_id)
                 .getSingleResult();
     }
+
+    @Override
+    public CyberRole fetchByName(String cyber_role_name) {
+        return (CyberRole) entityManager.createQuery("select cr from CyberRole cr WHERE cr.cyber_role_name = :cyber_role_name")
+                .setParameter("cyber_role_name", cyber_role_name)
+                .getSingleResult();
+    }
 }

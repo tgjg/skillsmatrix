@@ -13,7 +13,7 @@ public class CoreCyberSkillCustomRepositoryImpl implements CoreCyberSkillCustomR
 
     @Override
     public CoreCyberSkill fetchById(Long core_skill_id) {
-        return (CoreCyberSkill) entityManager.createQuery("select ccs from CoreCyberSkill ccs left join fetch ccs.cyberFunctionSet WHERE ccs.core_skill_id = :core_skill_id")
+        return (CoreCyberSkill) entityManager.createQuery("select ccs from CoreCyberSkill ccs left join fetch ccs.cyberFunctionSet cfs left join fetch cfs.cyberRoleSet WHERE ccs.core_skill_id = :core_skill_id")
                 .setParameter("core_skill_id", core_skill_id)
                 .getSingleResult();
     }

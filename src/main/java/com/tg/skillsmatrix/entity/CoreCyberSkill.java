@@ -28,6 +28,9 @@ public class CoreCyberSkill {
     )
     private Set<CyberFunction> cyberFunctionSet = new HashSet<>();
 
+    @OneToMany(cascade = CascadeType.ALL)
+    private Set<PersonCyberSkill> personCyberSkillSet = new HashSet<>();
+
 
     public CoreCyberSkill() {
 
