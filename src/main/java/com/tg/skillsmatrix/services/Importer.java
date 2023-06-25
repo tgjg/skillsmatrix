@@ -1,11 +1,10 @@
 package com.tg.skillsmatrix.services;
 
-import com.tg.skillsmatrix.entity.CoreCyberSkill;
-import com.tg.skillsmatrix.entity.CyberFunction;
-import com.tg.skillsmatrix.entity.CyberRole;
+import com.tg.skillsmatrix.entity.*;
 import com.tg.skillsmatrix.repository.CoreCyberSkillRepository;
 import com.tg.skillsmatrix.repository.CyberFunctionRepository;
 import com.tg.skillsmatrix.repository.CyberRoleRepository;
+import com.tg.skillsmatrix.repository.PersonRepository;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
@@ -18,6 +17,8 @@ public class Importer {
     CyberRoleRepository cyberRoleRepository;
     CyberFunctionRepository cyberFunctionRepository;
 
+    PersonRepository personRepository;
+
     List<CoreCyberSkill> coreCyberSkillList = new ArrayList<>();
     Map<String,CyberRole> cyberRoleMap = new HashMap<>();
     Map<String, CyberFunction> cyberFunctionMap = new HashMap<>();
@@ -25,10 +26,12 @@ public class Importer {
     Map<String, CoreCyberSkill> coreCyberSkillMap = new HashMap<>();
 
     public Importer(CoreCyberSkillRepository coreCyberSkillRepository,
-            CyberRoleRepository cyberRoleRepository, CyberFunctionRepository cyberFunctionRepository) {
+            CyberRoleRepository cyberRoleRepository, CyberFunctionRepository cyberFunctionRepository,
+                    PersonRepository personRepository) {
         this.cyberRoleRepository = cyberRoleRepository;
         this.coreCyberSkillRepository = coreCyberSkillRepository;
         this.cyberFunctionRepository = cyberFunctionRepository;
+        this.personRepository = personRepository;
     }
 
 
@@ -87,7 +90,21 @@ public class Importer {
             throw new RuntimeException(e);
         }
 
-        coreCyberSkillRepository.saveAll(coreCyberSkillList);
+        Person person = new Person("Joe", "Smith");
+        personRepository.save(person);
+        coreCyberSkillRepository.saveAllAndFlush(coreCyberSkillList);
+
+        PersonCyberSkill personCyberSkill = new PersonCyberSkill();
+
+        CoreCyberSkill coreCyberSkill = coreCyberSkillRepository.fetchById(5L);
+        personCyberSkill.setCoreCyberSkill(coreCyberSkill);
+        personCyberSkill.setPerson(person);
+
+
+        person.getPersonCyberSkillSet().add(personCyberSkill);
+        personRepository.savePerson(person);
+
+
         //cyberRoleRepository.saveAll(cyberRoleMap.values());
         //cyberFunctionRepository.saveAll(cyberFunctionMap.values());
 

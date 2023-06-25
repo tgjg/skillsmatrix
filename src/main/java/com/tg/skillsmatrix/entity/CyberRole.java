@@ -29,15 +29,6 @@ public class CyberRole {
         this.cyber_role_name = cyberRoleName;
     }
 
-
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(
-            name="role_person",
-            joinColumns = @JoinColumn(name = "cyber_role_id"),
-            inverseJoinColumns = @JoinColumn(name = "person_id")
-    )
-    private Set<Person> personSet = new HashSet<>();
-
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
             name="role_function",

@@ -4,7 +4,9 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 @Entity
@@ -14,22 +16,24 @@ public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "person_id")
-    private Long personId;
+    private Long person_id;
     private String firstName;
     private String lastName;
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    private String primaryRole;
+
+    @Transient
     private Set<CyberRole> cyberRoleSet = new HashSet<>();
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @Transient
     private Set<CyberFunction> cyberFunctionSet = new HashSet<>();
 
-    @OneToMany(cascade = CascadeType.ALL)
-    private Set<PersonCyberSkill> cyberSkillSet = new HashSet<>();
+    @OneToMany(mappedBy = "person", cascade = CascadeType.ALL)
+    private Set<PersonCyberSkill> personCyberSkillSet = new HashSet<>();
+
 
     @OneToMany(cascade = CascadeType.ALL)
     private Set<NonCoreCyberSkill> nonCoreCyberSkillSet = new HashSet<>();
-
 
     public Person() {
 
@@ -39,4 +43,5 @@ public class Person {
         this.firstName = firstName;
         this.lastName = lastname;
     }
+
 }

@@ -2,10 +2,7 @@ package com.tg.skillsmatrix.service;
 
 import com.tg.skillsmatrix.Type.SkillExperienceEnum;
 import com.tg.skillsmatrix.entity.*;
-import com.tg.skillsmatrix.repository.CoreCyberSkillRepository;
-import com.tg.skillsmatrix.repository.CyberFunctionRepository;
-import com.tg.skillsmatrix.repository.CyberRoleRepository;
-import com.tg.skillsmatrix.repository.PersonRepository;
+import com.tg.skillsmatrix.repository.*;
 import com.tg.skillsmatrix.services.Importer;
 import org.aspectj.lang.annotation.Before;
 import org.junit.jupiter.api.BeforeAll;
@@ -13,13 +10,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.jpa.provider.HibernateUtils;
 import org.testng.annotations.BeforeClass;
 
 import java.io.IOException;
-import java.util.List;
-import java.util.Optional;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -42,11 +37,16 @@ public class ImporterTest {
     @Autowired
     PersonRepository personRepository;
 
+    @Autowired
+    PersonCyberSkillRepository personCyberSkillRepository;
+
+
     @BeforeEach
     public void setupTests() throws IOException {
         if ( !initImporter) {
             importer.import_core_skills();
             initImporter = true;
+
         }
     }
 
@@ -82,29 +82,35 @@ public class ImporterTest {
 
     @Test
     void createRandomPerson() throws Exception {
-        Person person = new Person("Joe", "Bloggs");
-        Person p2 = personRepository.save(person);
-        assertTrue(p2.getPersonId().equals(person.getPersonId()));
+        Person person = personRepository.fetchById(1L);
 
+        List<CoreCyberSkill> coreCyberSkillList = coreCyberSkillRepository.fetchAll();
 
-        CoreCyberSkill coreCyberSkill = coreCyberSkillRepository.fetchById(20L);
-
-        PersonCyberSkill personCyberSkill = new PersonCyberSkill();
-        personCyberSkill.setCoreCyberSkill(coreCyberSkill);
-        personCyberSkill.setSkillExperienceEnum(SkillExperienceEnum.INFORMED);
-
-        String skillDetail = "Skill detail for " + coreCyberSkill.getCore_skill_name();
-
-        personCyberSkill.setCyberSkillPersonalDetail(skillDetail);
-        Set<PersonCyberSkill> personCyberSkillSet = person.getCyberSkillSet();
-        personCyberSkillSet.add(personCyberSkill);
-        person.setCyberSkillSet(personCyberSkillSet);
+        // set the person's function set
 
         Set<CyberFunction> cyberFunctionSet = person.getCyberFunctionSet();
-        cyberFunctionSet.add(cyberFunctionRepository.findById(3L).get());
-        cyberFunctionSet.add(cyberFunctionRepository.findById(4L).get());
-        person.setCyberFunctionSet(cyberFunctionSet);
 
+
+        Map<String, CyberFunction> functionMap = new HashMap<>();
+        for (CyberFunction cf : person.getCyberFunctionSet()) {
+            if ( !functionMap.containsKey(cf.getCyber_function_name())) {
+                functionMap.put(cf.getCyber_function_name(), cf);
+                cyberFunctionSet.add(cf);
+            }
+        }
+
+        /*
+        for (CyberFunction cf : personCyberSkill2.getCoreCyberSkill().getCyberFunctionSet()) {
+            if ( !functionMap.containsKey(cf.getCyber_function_name())) {
+                functionMap.put(cf.getCyber_function_name(), cf);
+                cyberFunctionSet.add(cf);
+            }
+        }
+
+
+        person.setCyberFunctionSet(cyberFunctionSet);
+*/
+        // set the person's role set
         /*
         Set<CyberRole> cyberRoleSet = person.getCyberRoleSet();
 
@@ -115,9 +121,10 @@ public class ImporterTest {
         }
 
         person.setCyberRoleSet(cyberRoleSet);
-*/
-        Person p3 = personRepository.save(person);
+        */
 
-        assertTrue(p3.getCyberSkillSet().size() > 0);
+        person = personRepository.savePerson(person);
+        assertTrue(person.getPersonCyberSkillSet().size() > 0);
+
     }
 }
