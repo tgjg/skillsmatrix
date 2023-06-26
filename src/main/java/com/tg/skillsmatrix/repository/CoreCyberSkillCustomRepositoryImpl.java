@@ -18,4 +18,10 @@ public class CoreCyberSkillCustomRepositoryImpl implements CoreCyberSkillCustomR
                 .getSingleResult();
     }
 
+    @Override
+    public List<CoreCyberSkill> fetchAll() {
+        return (List<CoreCyberSkill>) entityManager.createQuery("select ccs from CoreCyberSkill ccs left join fetch ccs.personCyberSkillSet")
+                .getResultList();
+    }
+
 }

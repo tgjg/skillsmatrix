@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
+@Table(name = "person_cyber_skill")
 @Getter
 @Setter
 public class PersonCyberSkill {
@@ -13,13 +14,16 @@ public class PersonCyberSkill {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long person_skill_id;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
+    @JoinColumn(name = "person_id")
+    private Person person;
+
+    @ManyToOne
+    @JoinColumn(name = "core_skill_id")
     private CoreCyberSkill coreCyberSkill;
 
     private String cyberSkillPersonalDetail;
     private SkillExperienceEnum skillExperienceEnum = SkillExperienceEnum.NONE;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    private Person person;
 
 }
