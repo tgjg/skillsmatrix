@@ -1,17 +1,11 @@
 package com.tg.skillsmatrix.service;
 
-import com.tg.skillsmatrix.Type.SkillExperienceEnum;
 import com.tg.skillsmatrix.entity.*;
 import com.tg.skillsmatrix.repository.*;
-import com.tg.skillsmatrix.services.Importer;
-import org.aspectj.lang.annotation.Before;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.jpa.provider.HibernateUtils;
-import org.testng.annotations.BeforeClass;
 
 import java.io.IOException;
 import java.util.*;

@@ -2,14 +2,14 @@ Advanced Persistent Threat (APT) Detection and Mitigation,Security Engineering,S
 Advanced Threat Analytics and Behavioral Analysis,Security Engineering,Security Analysis,Security Testing
 Application Security Testing,Security Engineering,Security Testing,Application Security
 Business Continuity Planning,Security Risk and Compliance,Business Continuity,Security Strategy
-Certificate Management,Other,Cryptography and Certificate Management,Servers and Infrastructure Services
+Certificate Management,Security Operations,Cryptography and Certificate Management,Servers and Infrastructure Services
 Cloud Penetration Testing,Security Engineering,Cloud Security,Security Testing
 Cloud Security,Security Architecture,Cloud Security,Security Strategy
 Cloud Security Architecture,Security Architecture,Cloud Security,Security Strategy
 Compliance and Regulatory Knowledge,Security Risk and Compliance,Compliance and Security Audit,Security Strategy
 Cryptocurrency and Blockchain Security,Security Engineering,Cryptography and Certificate Management,Application Security
 Cyber Threat Intelligence Gathering,Security Engineering,Security Analysis,Security Testing
-Data Backup and Recovery,Other,Data Security,Information Management
+Data Backup and Recovery,Security Operations,Data Security,Information Management
 Data Breach Response Plan Documentation,Security Architecture,Data Security,Security Strategy
 Data Breach Response Plan Testing,Security Operations,Data Security,Security Testing
 Data Breach Response Planning,Security Architecture,Data Security,Security Strategy
@@ -30,10 +30,10 @@ Data Privacy and Protection,Security Architecture,Data Security,Information Mana
 Data Retention and Destruction Implementation,Security Engineering,Data Security,Information Management
 Data Retention and Destruction Policies,Security Risk and Compliance,Data Security,Information Management
 Data Retention Policies and Procedures,Security Risk and Compliance,Data Security,Compliance and Security Audit
-Database Activity Monitoring (DAM),Other,Data Security,Information Management
-Database Security,Other,Data Security,Servers and Infrastructure Services
-Database Security Scanning Tools,Other,Data Security,Security Testing
-Digital Forensics,Other,Security Analysis,Security Testing
+Database Activity Monitoring (DAM),Security Operations,Data Security,Information Management
+Database Security,Security Architecture,Data Security,Servers and Infrastructure Services
+Database Security Scanning Tools,Security Engineering,Data Security,Security Testing
+Digital Forensics,Security Engineering,Security Analysis,Security Testing
 Digital Rights Management (DRM),Security Architecture,Data Security,Information Management
 Disaster Recovery Planning,Security Management,Business Continuity,Security Strategy
 Embedded Systems Security,Security Engineering,ICS and IoT Security,Application Security
@@ -89,9 +89,9 @@ Network Segmentation,Security Engineering,Network Security,Security Strategy
 Network Traffic Analysis,Security Engineering,Security Analysis,Servers and Infrastructure Services
 Network Traffic Monitoring and Analysis,Security Engineering,IDS/IPS,Servers and Infrastructure Services
 Office 365 Security,Security Engineering,End User Devices,Application Security
-Patch Management System Administration,Other,Servers and Infrastructure Services,End User Devices
-Patch Management System Implementation,Other,Servers and Infrastructure Services,End User Devices
-Patch Management System Optimization,Other,Servers and Infrastructure Services,Security Strategy
+Patch Management System Administration,Security Operations,Servers and Infrastructure Services,End User Devices
+Patch Management System Implementation,Security Engineering,Servers and Infrastructure Services,End User Devices
+Patch Management System Optimization,Security Engineering,Servers and Infrastructure Services,Security Strategy
 Phishing Awareness Training,Security Risk and Compliance,Awareness & Training,Soft Skills
 Physical Security,Security Management,Soft Skills,Business Continuity
 Power Platform Security Administration,Security Engineering,Application Security,Servers and Infrastructure Services
@@ -125,10 +125,10 @@ Secure Network Architecture Design,Security Architecture,Network Security,Securi
 Secure Network Design and Review,Security Architecture,Network Security,Security Strategy
 Secure Remote Access Technologies,Security Architecture,Network Security,Servers and Infrastructure Services
 Secure Remote Access VPN Implementation,Security Engineering,Network Security,Servers and Infrastructure Services
-Secure Remote Desktop Protocol (RDP) Configuration,Security Engineering,Security Engineering,Servers and Infrastructure Services
-Secure Remote Desktop Services,Security Architecture,Security Engineering,Servers and Infrastructure Services
-Secure SDLC (Software Development Life Cycle),Security Architecture,Security Engineering,Servers and Infrastructure Services
-Secure Shell (SSH) Implementation,Security Engineering,Security Engineering,Servers and Infrastructure Services
+Secure Remote Desktop Protocol (RDP) Configuration,Security Engineering,Servers and Infrastructure Services,End User Devices
+Secure Remote Desktop Services,Security Architecture,Servers and Infrastructure Services,End User Devices
+Secure SDLC (Software Development Life Cycle),Security Architecture,SecDevOps,Servers and Infrastructure Services
+Secure Shell (SSH) Implementation,Security Engineering,Servers and Infrastructure Services,Cryptography and Certificate Management
 Secure Software Development Life Cycle (SDLC) Implementation,Security Engineering,SecDevOps,Application Security
 Secure Virtual Private Network (VPN) Implementation,Security Engineering,Network Security,Servers and Infrastructure Services
 Secure Virtualization Technologies,Security Architecture,Cloud Security,Servers and Infrastructure Services
@@ -212,7 +212,7 @@ Security Risk Assessment,Security Risk and Compliance,Compliance and Security Au
 Security Risk Assessment Frameworks,Security Risk and Compliance,Security Strategy,Compliance and Security Audit
 Security Testing Methodologies,Security Engineering,Security Testing,SecDevOps
 Social Engineering Awareness and Prevention,Security Engineering,Awareness & Training,Soft Skills
-Social Media Security,Other,Information Management,Soft Skills
+Social Media Security,Security Operations,Information Management,Soft Skills
 Source Code Review,Security Engineering,Application Security,SecDevOps
 System Hardening,Security Engineering,Servers and Infrastructure Services,End User Devices
 Third-Party Vendor Risk Management,Security Risk and Compliance,Soft Skills,Security Strategy
@@ -231,11 +231,11 @@ Web Application Firewall (WAF) Management,Security Engineering,Application Secur
 Web Application Security,Security Engineering,Application Security,Servers and Infrastructure Services
 Web Application Security Testing Tools,Security Engineering,Application Security,Security Testing
 Web Application Vulnerability Assessment Tools,Security Operations,Application Security,Security Testing
-Web Application Vulnerability Remediation,Other,Application Security,Servers and Infrastructure Services
+Web Application Vulnerability Remediation,Security Engineering,Application Security,Servers and Infrastructure Services
 Web Application Vulnerability Scanning,Security Operations,Application Security,Security Testing
 Web Browser Security Configuration,Security Engineering,Application Security,End User Devices
 Web Content Filtering,Security Engineering,Application Security,Network Security
-Web Server Security,Other,Application Security,Servers and Infrastructure Services
+Web Server Security,Security Engineering,Application Security,Servers and Infrastructure Services
 Wireless Intrusion Detection System (WIDS) Management,Security Engineering,IDS/IPS,Servers and Infrastructure Services
 Wireless Intrusion Detection Systems (WIDS),Security Architecture,IDS/IPS,Servers and Infrastructure Services
 Wireless Intrusion Prevention System (WIPS) Management,Security Engineering,IDS/IPS,Servers and Infrastructure Services

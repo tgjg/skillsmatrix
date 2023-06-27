@@ -1,10 +1,12 @@
-package com.tg.skillsmatrix.services;
+package com.tg.skillsmatrix.service;
 
 import com.tg.skillsmatrix.entity.*;
 import com.tg.skillsmatrix.repository.CoreCyberSkillRepository;
 import com.tg.skillsmatrix.repository.CyberFunctionRepository;
 import com.tg.skillsmatrix.repository.CyberRoleRepository;
 import com.tg.skillsmatrix.repository.PersonRepository;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
@@ -34,7 +36,7 @@ public class Importer {
         this.personRepository = personRepository;
     }
 
-
+    @EventListener(ApplicationReadyEvent.class)
     public void import_core_skills() throws IOException {
 
         BufferedReader reader;

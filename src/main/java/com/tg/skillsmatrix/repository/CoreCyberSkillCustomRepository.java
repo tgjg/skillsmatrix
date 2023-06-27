@@ -8,4 +8,6 @@ public interface CoreCyberSkillCustomRepository {
 
     CoreCyberSkill fetchById(Long id);
     List<CoreCyberSkill> fetchAll();
+
+    List<CoreCyberSkill> fetchAllSkillsAndFunctions();
 }

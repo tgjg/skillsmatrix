@@ -22,6 +22,8 @@ public class Person {
 
     private String primaryRole;
 
+    private boolean isEnabled = true;
+
     @Transient
     private Set<CyberRole> cyberRoleSet = new HashSet<>();
 
